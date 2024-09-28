@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -8,7 +9,7 @@ function Navbar() {
         <div className="absolute inset-0 shadow-[0_4px_30px_rgba(0,0,0,0.01)] backdrop-blur"></div>
 
         {/* Logo */}
-        <a className="relative" href="/">
+        <Link className="relative" href="/">
           <svg className="w-[55px] xl:w-[91px]" viewBox="0 0 92 28" fill="none">
             <g clipPath="url(#a)">
               <path
@@ -68,25 +69,19 @@ function Navbar() {
               </clipPath>
             </defs>
           </svg>
-        </a>
+        </Link>
 
         {/* Navigation Links */}
         <div className="flex items-center justify-center gap-4 md:gap-8 relative font-geist-sans">
           <div className="hidden lg:flex items-center gap-8 font-geist-mono font-light text-sm">
-            <a href="/accelerator/peoples-choice">People's Choice</a>
-            <a href="/accelerator#benefits">What You Get</a>
-            <a href="/accelerator#schedule">Schedule</a>
-            <a href="/accelerator#mentors">Mentors</a>
-            <a href="/accelerator#about">About</a>
+            <Link href="/">Home</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/blogs">Blogs</Link>
+            <Link href="/contact" className="bg-black text-white px-4 py-2 rounded-xl">Contact Us</Link>
           </div>
 
-          {/* Apply Button */}
-          <a
-            className="rounded-full font-geist-mono bg-[#2E3131] border-white border font-light px-4 py-2 text-sm"
-            href="/accelerator/apply"
-          >
-            <span className="hidden md:inline-block">batch.</span>apply(2024)
-          </a>
+
 
           {/* Mobile Menu Button */}
           <div className="relative h-6 w-6 lg:hidden">

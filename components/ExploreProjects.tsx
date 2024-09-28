@@ -31,7 +31,7 @@ function ExploreProjects() {
 
   return (
     <div className='min-h-screen font-poppins max-w-6xl mx-auto px-6 py-12'>
-      <h1 className='text-center text-2xl font-bold md:text-5xl mb-10'>
+      <h1 className='text-center text-2xl text-gray-800 font-bold md:text-5xl mb-10'>
         Explore Some of Our Projects
       </h1>
 
@@ -54,7 +54,6 @@ function ExploreProjects() {
               <div className='absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-0 transition-all duration-300'></div>
             </div>
             <div className='p-4'>
-              {/* Title that changes color on hover */}
               <h3 className='text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-600 transition-colors duration-300'>
                 {project.title}
               </h3>
