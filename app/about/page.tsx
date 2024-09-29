@@ -1,6 +1,8 @@
 "use client";
 import CoreValuesSection from '@/components/CoreValues';
+import FAQ from '@/components/FAQ';
 import { IconCloudComponent } from '@/components/magicui/IconCloud';
+import OurTeam from '@/components/OurTeam';
 import TechStack from '@/components/TechStack';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -77,6 +79,7 @@ function AboutPage() {
       </motion.div>
       <hr className='my-10'/>
     <CoreValuesSection/>
+    <OurTeam/>
     </section>
   );
 }
