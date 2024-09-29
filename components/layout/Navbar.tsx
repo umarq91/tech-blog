@@ -78,7 +78,7 @@ function Navbar() {
             <Link href="/services">Services</Link>
             <Link href="/about">About Us</Link>
             <Link href="/blogs">Blogs</Link>
-            <Link href="/contact" className="bg-black text-white px-4 py-2 rounded-xl">Contact Us</Link>
+            <Link href="/contact-us" className="bg-black text-white px-4 py-2 rounded-xl">Contact Us</Link>
           </div>
 
 

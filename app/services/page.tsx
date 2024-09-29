@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { IconCloudComponent } from "@/components/magicui/IconCloud";
 import StickyScrollComponent from "@/components/StickyScroll";
 import ServicesTech from "@/components/ServicesTech";
+import FAQ from "@/components/FAQ";
 const content = [
   {
     title: "Collaborative Editing",
@@ -114,7 +115,7 @@ export default function Services() {
       <hr className="my-12 border-gray-300" />
       <ServicesTech/>
       <hr className="my-12 border-gray-300" />
-
+    <FAQ/>
     </div>
   );
 }
