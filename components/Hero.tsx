@@ -10,7 +10,7 @@ function HeroSection() {
           <p className="text-base font-montserrat  tracking-wider text-black uppercase">
           • Leading Innovation in Tech
           </p>
-          <h1 className="mt-4 text-4xl font-semibold font-montserrat text-black lg:mt-8 sm:text-5xl xl:text-7xl">
+          <h1 className="mt-4  text-4xl font-semibold font-montserrat text-black lg:mt-8 sm:text-5xl xl:text-7xl">
             Accelerating Digital Transformation
           </h1>
           <p className="mt-4 text-base text-black lg:mt-4 sm:text-xl">
