@@ -6,7 +6,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
+    <div className=''>
       <HeroSection/>
       <hr className='my-10 border border-gray-200'/>
       <OurWork/>
