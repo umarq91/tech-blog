@@ -10,19 +10,22 @@ function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-10 w-full py-6 text-white">
+    <header className="fixed top-0 left-0 z-10 font-montserrat  w-full py-6 ">
       <nav className="flex w-full h-fit items-center justify-between max-w-[1380px] mx-auto px-5 md:px-10 z-[20]">
         {/* Backdrop with black tint */}
-        <div className="absolute inset-0 shadow-[0_4px_30px_rgba(0,0,0,0.01)] backdrop-blur bg-gray-600 bg-opacity-60"></div>
+        <div className="absolute inset-0 shadow-[0_4px_30px_rgba(0,0,0,0.01)] backdrop-blur  bg-opacity-60"></div>
 
         {/* Logo */}
         <Link className="relative" href="/">
-          <img src="/logo.png" className="h-8 md:h-10 w-8 md:w-10" alt="Logo" />
+        <img src="/logo.png"
+     style={{ filter: 'invert(1)' }}
+     className="h-8 md:h-10 w-8 md:w-10" alt="Logo" />
+
         </Link>
 
         {/* Navigation Links */}
         <div className="flex items-center justify-center gap-4 md:gap-8 relative font-geist-sans">
-          <div className="hidden lg:flex items-center gap-8 font-geist-mono font-light text-sm">
+          <div className="hidden lg:flex items-center gap-8 font-semibold text-sm">
             <Link href="/">Home</Link>
             <Link href="/services">Services</Link>
             <Link href="/about">About Us</Link>
