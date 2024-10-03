@@ -63,7 +63,7 @@ function Blogs() {
                             {/* Uploaded By Section */}
                             <div className='mt-5 flex items-center'>
                                 <Image
-                                    src="https://ew.com/thmb/LZFpFJI6FX0LUZj9xlpSCzZAKno=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gillian-flynn_320-731254fa87bf411cb4ad799d64fc23f5.jpg"
+                                    src="https://ecw.com/thmb/LZFpFJI6FX0LUZj9xlpSCzZAKno=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gillian-flynn_320-731254fa87bf411cb4ad799d64fc23f5.jpg"
                                     width={50}
                                     height={50}
                                     alt='author'

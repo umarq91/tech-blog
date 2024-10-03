@@ -39,7 +39,7 @@ function ExploreProjects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className='group relative  w-full h-[500px] bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer'
+            className='group relative  w-full h-[500px] bg-white hover:shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer'
           >
             <div className='h-[65%] relative'>
               {/* Image with overlay */}
