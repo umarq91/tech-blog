@@ -40,18 +40,18 @@ function Introduction() {
               style={{ objectFit: 'contain' }}
               className='relative'
             />
-            <div className='absolute left-5 sm:left-10 bottom-0 bg-gray-100 p-3 sm:p-5 z-10 flex  h-[25%] md:h-[35%] gap-4 items-center'>
+            <div className='absolute left-0   sm:left-8  max-w-[90%] lg:-left-3 xl:left-10 bottom-12 md:bottom-0 bg-gray-100 p-3 sm:p-5 z-10 flex  sm:h-[25%]   md:gap-4 items-center'>
               <img
                 src="/logo.png"
                 style={{ filter: 'invert(1)' }}
                 className="h-6 sm:h-8 w-6 sm:w-8 mt-1"
                 alt="Logo"
               />
-              <div className='flex items-center gap-3'>
-                <h1 className='text-6xl text-black'>+8</h1>
+              <div className='flex items-center gap-3 '>
+                <h1 className='text-xl sm:text-3xl md:text-4xl text-black'>+8</h1>
                 <div>
-                  <p className='text-lg text-blue-500'>Years</p>
-                  <p className='text-lg text-gray-500'>Experience</p>
+                  <p className='text-xs sm:text-base text-blue-500'>Years</p>
+                  <p className='text-xs sm:text-sm text-gray-500'>Experience</p>
                 </div>
               </div>
             </div>
