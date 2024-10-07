@@ -1,5 +1,6 @@
 import ExploreProjects from '@/components/ExploreProjects'
 import HeroSection from '@/components/Hero'
+import Introduction from '@/components/Introduction'
 import { Testimonials } from '@/components/magicui/CustomTestimonials'
 import OurWork from '@/components/OurWork'
 import React from 'react'
@@ -7,7 +8,8 @@ import React from 'react'
 function Home() {
   return (
     <div className=''>
-      <HeroSection/>
+      {/* <HeroSection/> */}
+      <Introduction/>
       <hr className='my-10 border border-gray-200'/>
       <OurWork/>
       <hr className='my-10 border border-gray-200'/>
