@@ -1,12 +1,27 @@
+'use client'
 import Image from 'next/image';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Introduction() {
+  // Define animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className='min-h-screen bg-[#e4e4e4] bg-opacity-30 py-10 px-4 sm:py-16 lg:p-24 font-montserrat'>
       <div className='flex flex-col lg:flex-row'>
         {/* left */}
-        <div className='flex-1'>
+        <motion.div
+          className='flex-1'
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={containerVariants}
+          transition={{ duration: 0.5 }}
+        >
           {/* content */}
           <div className='flex flex-col gap-4'>
             <h5 className='text-lg md:text-xl text-blue-800 font-light'>Empowernment</h5>
@@ -28,10 +43,17 @@ function Introduction() {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* right */}
-        <div className='flex-1 w-full mt-10 lg:mt-0'>
+        <motion.div
+          className='flex-1 w-full mt-10 lg:mt-0'
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={containerVariants}
+          transition={{ duration: 0.5, delay: 0.2 }} // Slight delay for the right section
+        >
           <div className='h-[60vh] lg:h-[80%] relative'>
             <Image
               src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/bg1-1-1.png"
@@ -40,7 +62,7 @@ function Introduction() {
               style={{ objectFit: 'contain' }}
               className='relative'
             />
-            <div className='absolute left-0    sm:left-8  max-w-[90%] lg:-left-3 xl:left-10 bottom-16 lg:bottom-10 md:bottom-0 bg-gray-100 p-3 sm:p-5 z-10 flex  sm:h-[25%]   md:gap-4 items-center'>
+            <div className='absolute left-0 sm:left-8 max-w-[90%] lg:-left-3 xl:left-10 bottom-16 lg:bottom-10 md:bottom-0 bg-gray-100 p-3 sm:p-5 z-10 flex sm:h-[25%] md:gap-4 items-center'>
               <img
                 src="/logo.png"
                 style={{ filter: 'invert(1)' }}
@@ -56,7 +78,7 @@ function Introduction() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
