@@ -26,7 +26,7 @@ const MarqueeLogo = () => {
   };
 
   return (
-    <div className="overflow-hidden bg-gray-50 py-8"> {/* Container with padding */}
+    <div className="overflow-hidden  py-8"> {/* Container with padding */}
       <div className="relative w-full flex items-center">
         <motion.div
           className="flex space-x-12 items-center"
