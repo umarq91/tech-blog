@@ -11,15 +11,15 @@ const logos = [
 ];
 
 const MarqueeLogo = () => {
-  const animation = {
+  const marqueeVariants = {
     animate: {
-      x: ["100%", "-100%"], // Move from right (100%) to left (-100%)
+      x: ["0%", "-100%"], // Move from right to left
       transition: {
         x: {
           repeat: Infinity, // Infinite loop
           repeatType: "loop", // Loop the animation
-          duration: 20, // Adjust this for smoothness and speed (set to a larger value for continuous motion)
-          ease: "linear", // Linear ease for constant speed
+          duration: 20, // Adjust this value to control the speed
+          ease: "linear", // Ensure constant speed with linear ease
         },
       },
     },
@@ -27,20 +27,23 @@ const MarqueeLogo = () => {
 
   return (
     <div className="overflow-hidden bg-gray-50 py-8"> {/* Container with padding */}
-      <motion.div
-        className="flex space-x-12 items-center"
-        {...animation}
-      >
-        {/* Repeat logos to create continuous scrolling effect */}
-        {[...logos, ...logos].map((logo, index) => (
-          <img
-            key={index}
-            src={logo.src}
-            alt={logo.alt}
-            className="h-24 w-auto" 
-          />
-        ))}
-      </motion.div>
+      <div className="relative w-full flex items-center">
+        <motion.div
+          className="flex space-x-12 items-center"
+          variants={marqueeVariants}
+          animate="animate"
+        >
+          {/* Render logos twice to create seamless scroll effect */}
+          {[...logos, ...logos].map((logo, index) => (
+            <img
+              key={index}
+              src={logo.src}
+              alt={logo.alt}
+              className="h-24 w-auto" 
+            />
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 };
