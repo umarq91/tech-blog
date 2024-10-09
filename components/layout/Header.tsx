@@ -11,28 +11,29 @@ function Header() {
   };
 
   return (
-    <header className="bg-white border-b p-4 font-montserrat border">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="bg-white lg:px-10 border-b p-4 font-yantramanav border ">
+      <div className="container mx-auto flex justify-around items-center">
         {/* Left side: Logo and Brand Name */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 gap-6">
           {/* Logo */}
           <Link href="/">
             <img
               src="/logo.png"
               alt="Logo"
-              className="h-10 w-10 cursor-pointer transition-transform duration-300 hover:scale-110"
+              className="h-8 w-8 cursor-pointer transition-transform duration-300 hover:scale-110"
               style={{ filter: 'invert(1)' }}
             />
           </Link>
-        </div>
-
-        {/* Links for larger screens */}
-        <nav className="hidden lg:flex space-x-6 text-sm">
+          <nav className="hidden lg:flex space-x-8 text-sm ">
           <Link href="/" className="hover:text-blue-600 transition">Home</Link>
           <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
           <Link href="/about" className="hover:text-blue-600 transition">About Us</Link>
           <Link href="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
         </nav>
+        </div>
+
+        {/* Links for larger screens */}
+    
 
         {/* Mobile Menu Button */}
         <button
@@ -46,9 +47,11 @@ function Header() {
         {/* Right side: Contact Info and Buttons */}
         <div className="hidden lg:flex items-center space-x-6">
           {/* Phone Number */}
-          <div className="flex flex-col items-center">
+          
+            <div className="border-l-2 border-gray-200 h-6 mx-2"></div>
+            <div className="flex flex-col items-center">
             <Link href="/contact-us">
-              <button className="text-blue-600 px-5 rounded-full text-xs hover:text-blue-700 transition">
+              <button className="text-blue-700 px-6  rounded-full text-xs hover:text-blue-700 transition">
                 Call us
               </button>
             </Link>
@@ -60,7 +63,7 @@ function Header() {
 
           {/* Contact Us Button */}
           <Link href="/contact-us">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-xs transition">
+            <button className="bg-blue-700 hover:bg-blue-700 text-white px-7 py-3 rounded-full text-xs transition">
               Contact Us
             </button>
           </Link>
@@ -83,7 +86,7 @@ function Header() {
               </button>
             </Link>
             <Link href="/contact-us">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-xs transition">
+              <button className="bg-blue-700 hover:bg-blue-800 text-white px-7 py-2 rounded-full text-xs transition">
                 Contact Us
               </button>
             </Link>

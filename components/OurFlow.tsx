@@ -4,7 +4,7 @@ import React from 'react';
 function OurFlow() {
   return (
     <div className="bg-white py-16 font-yantramanav   ">
-      <div className="container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between px-4 max-w-6xl">
+      <div className="container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between px-4 max-w-6xl">
         {/* Left side text */}
         <div className="flex flex-col  items-start justify-between lg:max-w-[350px] mb-16 w-full">
           <p className="text-[#1351d8] text-[10px] uppercase font-syne font-medium  tracking-[7px] leading-[1.2px] box-border mb-[20px]">
@@ -37,6 +37,7 @@ function OurFlow() {
         </div>
 
         {/* Timeline Component */}
+        <div>
         <ol className="relative border-l border-dotted border-gray-300 dark:border-blue-400">
           {/* Timeline Item 1 */}
           <li className="mb-10 ml-6">
@@ -45,12 +46,12 @@ function OurFlow() {
                 01
               </span>
             </span>
-            <div className="about-timeline-item py-[30px] px-[28px] bg-[#f3f6fd] rounded-[10px] shadow-md relative transition duration-300 ease-in-out transform hover:-translate-y-1 ml-[50px]">
+            <div className="about-timeline-item py-[30px] px-[28px] bg-[#f3f6fd] rounded-[10px] text-[#1c1c1c]  shadow-md relative transition duration-300 ease-in-out hover:bg-gray-800 hover:text-white transform hover:-translate-y-1 ml-[50px]">
               <div className="about-timeline-item-inner">
-                <h4 className="text-[18px] leading-[21px] mb-[6px] font-yantramanav tracking-[-.5px] text-[#1c1c1c] font-bold">
+                <h4 className="text-[18px] leading-[21px] mb-[6px] font-yantramanav tracking-[-.5px]   font-bold">
                   Discovery and Analysis
                 </h4>
-                <p className="text-[13px] leading-[19.5px] text-[#1c1c1cb3]">
+                <p className="text-[13px] leading-[19.5px] ">
                   Perform an analysis of the client's existing IT systems.
                 </p>
               </div>
@@ -64,12 +65,12 @@ function OurFlow() {
                 02
               </span>
             </span>
-            <div className="about-timeline-item w-auto md:w-full bg-[#f3f6fd] py-[30px] px-[28px]  rounded-[10px] shadow-md relative transition duration-300 ease-in-out transform hover:-translate-y-1 ml-[50px]">
+            <div className="about-timeline-item w-auto md:w-full bg-[#f3f6fd] py-[30px] px-[28px] hover:bg-gray-800 text-[#1c1c1c] hover:text-white  rounded-[10px] shadow-md relative transition duration-300 ease-in-out transform hover:-translate-y-1 ml-[50px]">
               <div className="about-timeline-item-inner">
-                <h4 className="text-[18px] leading-[21px] mb-[6px] font-yantramanav tracking-[-.5px] text-[#1c1c1c] font-bold">
+                <h4 className="text-[18px] leading-[21px] mb-[6px] font-yantramanav tracking-[-.5px]  font-bold">
                   Tailored Solutions
                 </h4>
-                <p className="text-[13px] leading-[19.5px] text-[#1c1c1cb3]">
+                <p className="text-[13px] leading-[19.5px] ">
                   Develop IT solutions based on the analysis phase.
                 </p>
               </div>
@@ -83,18 +84,19 @@ function OurFlow() {
                 03
               </span>
             </span>
-            <div className="about-timeline-item py-[30px] px-[28px] bg-[#f3f6fd] rounded-[10px] shadow-md relative transition duration-300 ease-in-out transform hover:-translate-y-1 ml-[50px]">
+            <div className="about-timeline-item py-[30px] px-[28px] bg-[#f3f6fd] rounded-[10px] shadow-md relative hover:bg-gray-800 text-[#1c1c1c] hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1 ml-[50px]">
               <div className="about-timeline-item-inner">
-                <h4 className="text-[18px] leading-[21px] mb-[6px] font-yantramanav tracking-[-.5px] text-[#1c1c1c] font-bold">
+                <h4 className="text-[18px] leading-[21px] mb-[6px] font-yantramanav tracking-[-.5px]  font-bold">
                   Deployment and Support
                 </h4>
-                <p className="text-[13px] leading-[19.5px] text-[#1c1c1cb3]">
+                <p className="text-[13px] leading-[19.5px]">
                   Regularly communicate with our client to address any concerns.
                 </p>
               </div>
             </div>
           </li>
         </ol>
+        </div>
       </div>
     </div>
   );
