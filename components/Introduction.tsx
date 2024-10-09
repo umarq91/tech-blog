@@ -11,7 +11,7 @@ function Introduction() {
   };
 
   return (
-    <div className='min-h-screen bg-[#e4e4e4] bg-opacity-30 py-10 px-4 sm:py-16 lg:p-24 font-montserrat'>
+    <div className='min-h-screen bg-[#e4e4e4] bg-opacity-30 py-10 px-4 sm:py-16 lg:p-24 font-yantramanav'>
       <div className='flex flex-col lg:flex-row'>
         {/* left */}
         <motion.div
@@ -23,22 +23,22 @@ function Introduction() {
           transition={{ duration: 0.5 }}
         >
           {/* content */}
-          <div className='flex flex-col gap-4'>
-            <h5 className='text-lg md:text-xl text-blue-800 font-light'>Empowernment</h5>
-            <div className='flex flex-col gap-8'>
-              <h1 className='text-2xl md:text-4xl lg:text-5xl text-gray-900 font-bold'>
+          <div className='flex flex-col gap-2 '>
+            <h5 className='text-[10px] text-blue-800  font-[500] font-syne tracking-[6px] uppercase'>Empowernment</h5>
+            <div className='flex flex-col gap-8  items-start'>
+              <h1 className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-900 font-[500]'>
                 Seamless IT for your business, boosting your growth
               </h1>
-              <p className='text-gray-400 text-base md:text-lg'>
+              <p className='text-[#212529] leading-7 text-base md:text-lg md:pr-10 tracking-wild font-montserrat'>
                 We provide the expertise and support to propel your business forward in the digital landscape.
               </p>
             </div>
             {/* buttons */}
-            <div className='flex gap-4'>
-              <button className='bg-blue-800 rounded-full text-white px-4 py-2'>
+            <div className='flex gap-4 mt-8'>
+              <button className='bg-[#1351d8] rounded-full text-white px-6 py-2'>
                 Learn More
               </button>
-              <button className='bg-gray-300 rounded-full text-blue-800 px-4 py-2'>
+              <button className='bg-gray-300 rounded-full text-blue-800 px-8 text-xs py-2'>
                 Let's Talk
               </button>
             </div>

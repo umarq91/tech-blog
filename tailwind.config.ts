@@ -13,7 +13,9 @@ const config: Config = {
   	extend: {
   		fontFamily: {
   			poppins: ["Poppins",'sans-serif'],
-  			montserrat: ["Montserrat", 'sans-serif']
+  			montserrat: ["Montserrat", 'sans-serif'],
+  			syne: ["syne", 'sans-serif'],
+			yantramanav: ["Yantramanav", 'sans-serif'],
   		},
   		colors: {
   			background: 'hsl(var(--background))',
