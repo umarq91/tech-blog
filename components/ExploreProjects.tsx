@@ -30,7 +30,7 @@ function ExploreProjects() {
   ];
 
   return (
-    <div className='min-h-screen font-poppins max-w-6xl mx-auto px-6 py-12'>
+    <div className='min-h-screen font-yantramanav max-w-6xl mx-auto px-6 py-12'>
       <h1 className='text-center text-2xl text-gray-800 font-bold md:text-5xl mb-10'>
         Explore Some of Our Projects
       </h1>

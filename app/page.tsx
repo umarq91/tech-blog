@@ -13,23 +13,23 @@ function Home() {
   return (
     <div className='flex flex-col gap-10 '>
       {/* <HeroSection/> */}
-      <Introduction/>
-      <hr className='my-10 border border-gray-200'/>
+      <Introduction />
+      <hr className='my-10 border border-gray-200' />
       {/* <OurWork/> */}
       <h1 className='text-3xl md:text-5xl text-gray-900 font-bold text-center'> Our Partners </h1>
 
-       <MarqueeLogo/>
-       
-      <hr className='my-10 border border-gray-200'/>
+      <MarqueeLogo />
+
+      <hr className='my-10 border border-gray-200' />
       {/* <h1 className='text-3xl md:text-5xl text-gray-900 font-bold text-center'> What Clients Say </h1> */}
       {/* <Testimonials/> */}
-      <Ourservices/>
-      <hr className='my-10 border border-gray-200'/>
+      <OurFlow />
+      <hr className='my-10 border border-gray-200' />
 
-      <OurFlow/>
-      <hr className='my-10 border border-gray-200'/>
-      <ExploreProjects/>
-   
+      <Ourservices />
+      <hr className='my-10 border border-gray-200' />
+      <ExploreProjects />
+
     </div>
   )
 }
