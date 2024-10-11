@@ -29,6 +29,8 @@ function Header() {
           <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
           <Link href="/about" className="hover:text-blue-600 transition">About Us</Link>
           <Link href="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
+          <Link href="/portfolio" className="hover:text-blue-600 transition">Portfolio</Link>
+
         </nav>
         </div>
 
@@ -77,6 +79,8 @@ function Header() {
           <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
           <Link href="/about" className="hover:text-blue-600 transition">About Us</Link>
           <Link href="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
+          <Link href="/portfolio" className="hover:text-blue-600 transition">portfolio</Link>
+
 
           {/* Contact Info in Mobile */}
           <div className="flex flex-col items-start mt-4">
