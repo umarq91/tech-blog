@@ -30,6 +30,8 @@ function Header() {
           <Link href="/about" className="hover:text-blue-600 transition">About Us</Link>
           <Link href="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
           <Link href="/portfolio" className="hover:text-blue-600 transition">Portfolio</Link>
+          <Link href="/company" className="hover:text-blue-600 transition">Company</Link>
+
 
         </nav>
         </div>
@@ -80,6 +82,10 @@ function Header() {
           <Link href="/about" className="hover:text-blue-600 transition">About Us</Link>
           <Link href="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
           <Link href="/portfolio" className="hover:text-blue-600 transition">portfolio</Link>
+          <Link href="/company" className="hover:text-blue-600 transition">Comapny</Link>
+
+          
+
 
 
           {/* Contact Info in Mobile */}
