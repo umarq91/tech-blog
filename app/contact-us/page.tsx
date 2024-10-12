@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 function Contact() {
-  const [tooltip, setTooltip] = useState(null);
+  const [tooltip, setTooltip] = useState(0);
 
   const pinPoints = [
     { id: 1, top: '30%', left: '45%', address: 'Location 1 Address' },
@@ -51,8 +51,8 @@ function Contact() {
         key={pin.id}
         className="absolute cursor-pointer"
         style={{ top: pin.top, left: pin.left }}
-        onMouseEnter={() => setTooltip(pin.id)}
-        onMouseLeave={() => setTooltip(null)}
+        onMouseEnter={() => setTooltip(pin?.id)}
+        onMouseLeave={() => setTooltip(0)}
       >
         {/* Outer Circle */}
         <div className="relative flex justify-center items-center">
