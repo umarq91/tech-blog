@@ -4,6 +4,7 @@ import OurServices from '@/components/Ourservices'
 import { useInView } from 'framer-motion';
 import React, { useRef } from 'react'
 import {motion} from "framer-motion"
+import Team from './(components)/Team';
 function Comapny() {
   const services = [
     {
@@ -128,7 +129,83 @@ function Comapny() {
         ))}
       </div>
     </div>
+
+    {/* section 4 */}
+    
       </div>
+
+      <hr className='my-24'/>
+      {/* section 4 */}
+      <div className="max-w-7xl  mx-auto  p-6 md:p-12 font-montserrat " ref={ref}>
+        <div className='bg-blue-50 py-10'>
+
+      <div className="flex flex-col md:flex-row gap-6 mb-8">
+        <div className="flex-1 p-4">
+          <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
+          <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
+        </div>
+
+        <div className="flex-1 flex justify-end items-end md:px-10">
+          <button className='w-[70%] bg-blue-700 text-white py-3 px-6  rounded-xl' > Book an appointment with experts </button>
+        </div>
+      </div>
+</div>
+        {/* Team */}
+        <Team/>
+     
+    </div>
+<hr  className="my-20"/>
+    {/* section 5 */}
+    <div className="bg-[#1C1C1C] font-yantramanav lg:py-40 min-h-screen flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 px-6 lg:px-16 py-16">
+  {/* Left - Image */}
+  <div className="flex-1 flex justify-center  lg:justify-start">
+    <img
+      src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/about-service-3.png"
+      alt="Service"
+      className="w-full  object-cover rounded-xl shadow-lg"
+    />
+  </div>
+
+  {/* Right - Content */}
+  <div className="flex-1 text-white space-y-8 max-w-xl lg:max-w-lg">
+    {/* Heading */}
+    <h1 className="text-3xl lg:text-6xl font-bold leading-tight">
+      Why Our Services Stand Out
+    </h1>
+
+    {/* Paragraphs */}
+    <p className="text-base leading-relaxed">
+      We don’t believe in a one-size-fits-all approach. Our services are
+      carefully tailored to meet your unique needs, ensuring that you achieve
+      your goals with precision and excellence.
+    </p>
+    <p className="text-base  leading-relaxed">
+      Our commitment extends beyond the project itself. We are dedicated to
+      delivering value that lasts, focusing on long-term benefits that will
+      help you grow and succeed over time.
+    </p>
+
+    {/* Icon Section */}
+    <div className="gap-3 flex  items-center">
+      <div className="flex items-center gap-3">
+        {/* Tick Icon */}
+        <div className="text-blue-500 text-2xl">✔</div>
+        <h5 className="text-md ">
+          PPD Development
+        </h5>
+      </div>
+      <div className="flex items-center gap-3">
+        {/* Tick Icon */}
+        <div className="text-blue-500 text-2xl">✔</div>
+        <h5 className="text-md ">
+          Quick Response
+        </h5>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
     </div>
   )
 }
