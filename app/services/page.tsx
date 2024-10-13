@@ -64,24 +64,16 @@ export default function Services() {
   return (
     <div className="px-10 font-montserrat  pt-10">
       <section className="bg-[#FCF8F1] bg-opacity-30 py-8 font-poppins max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
-          viewport={{ once: true, amount: 0.5 }} // Adjust when the animation should start (50% in view)
-          transition={{ duration: 0.8, ease: 'easeInOut' }}
-          className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          {/* Introducing Section */}
-          <div className="grid  items-center grid-cols-1 gap-12 text-center mb-16">
-            <div>
-              <p className="text-sm font-montserrat tracking-wider text-black uppercase">
-                • Introducing
-              </p>
-              <h1 className="text-4xl mt-4 font-semibold font-montserrat text-black lg:text-6xl">
-                What We do
-              </h1>
-            </div>
-          </div>
-        </motion.div>
+
+        <div className='flex flex-col justify-center items-center  gap-5 text-center'>
+          <button className='text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition'>
+          Our Services
+          </button>
+          <h1 className='text-3xl md:text-5xl  lg:text-7xl max-w-[900px] font-yantramanav font-bold text-[#212529] leading-snug'>
+         Services We offer
+          </h1>
+       
+        </div>
       </section>
 
 {/* Section 2 */}

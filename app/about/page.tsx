@@ -18,7 +18,7 @@ function AboutPage() {
        transition={{ duration: 0.8, ease: 'easeInOut' }}
       className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Introducing Section */}
-        <div className="grid items-center grid-cols-1 gap-12 text-center mb-16">
+        {/* <div className="grid items-center grid-cols-1 gap-12 text-center mb-16">
           <div>
             <p className="text-sm font-montserrat tracking-wider text-black uppercase">
               • Introducing
@@ -27,6 +27,15 @@ function AboutPage() {
               About Our Company
             </h1>
           </div>
+        </div> */}
+    <div className='flex my-10 flex-col justify-center items-center  gap-5 text-center'>
+          <button className='text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition'>
+           About us
+          </button>
+          <h1 className='text-3xl md:text-5xl  lg:text-7xl max-w-[900px] font-yantramanav font-bold text-[#212529] leading-snug'>
+          Brief Introduction About us
+          </h1>
+       
         </div>
 
         {/* Image Section */}
