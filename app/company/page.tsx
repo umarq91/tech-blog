@@ -5,6 +5,8 @@ import { useInView } from 'framer-motion';
 import React, { useRef } from 'react'
 import {motion} from "framer-motion"
 import Team from './(components)/Team';
+import ServicesSection from '@/components/ServicesSection';
+import StandOutSection from '@/components/StandOutSection';
 function Comapny() {
   const services = [
     {
@@ -34,14 +36,6 @@ function Comapny() {
     },
   ];
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 20 }, // Start hidden and slightly below
-    visible: { opacity: 1, y: 0 },   // End fully visible at original position
-  };
-
-  // Ref to check if the container is in view
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // Trigger only once
 
 
   return (
@@ -98,113 +92,55 @@ function Comapny() {
       {/* section 3 */}
 
       <div className='bg-[#1C1C1C] min-h-screen text-white flex justify-center items-center'>
-      <div className="max-w-7xl mx-auto p-6 md:p-12 font-montserrat " ref={ref}>
-      <div className="flex flex-col md:flex-row gap-6 mb-8">
-        <div className="flex-1 p-4">
-          <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
-          <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
+        <div className="max-w-7xl mx-auto p-6 md:p-12 font-montserrat ">
+          <div className="flex flex-col md:flex-row gap-6 mb-8">
+            <div className="flex-1 p-4">
+              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
+              <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
+            </div>
+
+            <div className="flex-1 flex justify-center items-center md:px-10">
+              <p className="text-white text-xs text-center md:text-left">
+                One fundamental aspect of IT services is infrastructure management. This involves the design, implementation, and maintenance of the hardware, software, networks, and servers.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
+            {services.map((item, index) => (
+              <ServicesSection item={item} index={index} />
+            ))}
+
+          </div>
         </div>
 
-        <div className="flex-1 flex justify-center items-center md:px-10">
-          <p className="text-white text-xs text-center md:text-left">
-            One fundamental aspect of IT services is infrastructure management. This involves the design, implementation, and maintenance of the hardware, software, networks, and servers.
-          </p>
-        </div>
+        {/* section 4 */}
+
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
-        {services.map((item, index) => (
-          <motion.div
-            key={index}
-            className="flex bg-white text-black h-[250px] gap-3 justify-center flex-col items-left p-4 rounded-lg transition-shadow duration-300 ease-in-out"
-            initial="hidden"   // Start from hidden
-            animate={isInView ? "visible" : "hidden"} // Animate based on viewport
-            variants={cardVariants} // Use defined variants
-            transition={{ duration: 0.5, delay: index * 0.1 }} // Add stagger effect
-          >
-            <img src={item.logo} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
-            <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-            <p className="text-gray-600 text-xs">{item.description}</p>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-
-    {/* section 4 */}
-    
-      </div>
-
-      <hr className='my-24'/>
+      <hr className='my-24' />
       {/* section 4 */}
-      <div className="max-w-7xl  mx-auto  p-6 md:p-12 font-montserrat " ref={ref}>
+      <div className="max-w-7xl  mx-auto  p-6 md:p-12 font-montserrat ">
         <div className='bg-blue-50 py-10'>
 
-      <div className="flex flex-col md:flex-row gap-6 mb-8">
-        <div className="flex-1 p-4">
-          <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
-          <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
-        </div>
+          <div className="flex flex-col md:flex-row gap-6 mb-8">
+            <div className="flex-1 p-4">
+              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
+              <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
+            </div>
 
-        <div className="flex-1 flex justify-end items-end md:px-10">
-          <button className='w-[70%] bg-blue-700 text-white py-3 px-6  rounded-xl' > Book an appointment with experts </button>
+            <div className="flex-1 flex justify-end items-end md:px-10">
+              <button className='w-[70%] bg-blue-700 text-white py-3 px-6  rounded-xl' > Book an appointment with experts </button>
+            </div>
+          </div>
         </div>
-      </div>
-</div>
         {/* Team */}
-        <Team/>
-     
-    </div>
-<hr  className="my-20"/>
-    {/* section 5 */}
-    <div className="bg-[#1C1C1C] font-yantramanav lg:py-40 min-h-screen flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 px-6 lg:px-16 py-16">
-  {/* Left - Image */}
-  <div className="flex-1 flex justify-center  lg:justify-start">
-    <img
-      src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/about-service-3.png"
-      alt="Service"
-      className="w-full  object-cover rounded-xl shadow-lg"
-    />
-  </div>
+        <Team />
 
-  {/* Right - Content */}
-  <div className="flex-1 text-white space-y-8 max-w-xl lg:max-w-lg">
-    {/* Heading */}
-    <h1 className="text-3xl lg:text-6xl font-bold leading-tight">
-      Why Our Services Stand Out
-    </h1>
-
-    {/* Paragraphs */}
-    <p className="text-base leading-relaxed">
-      We don’t believe in a one-size-fits-all approach. Our services are
-      carefully tailored to meet your unique needs, ensuring that you achieve
-      your goals with precision and excellence.
-    </p>
-    <p className="text-base  leading-relaxed">
-      Our commitment extends beyond the project itself. We are dedicated to
-      delivering value that lasts, focusing on long-term benefits that will
-      help you grow and succeed over time.
-    </p>
-
-    {/* Icon Section */}
-    <div className="gap-3 flex  items-center">
-      <div className="flex items-center gap-3">
-        {/* Tick Icon */}
-        <div className="text-blue-500 text-2xl">✔</div>
-        <h5 className="text-md ">
-          PPD Development
-        </h5>
       </div>
-      <div className="flex items-center gap-3">
-        {/* Tick Icon */}
-        <div className="text-blue-500 text-2xl">✔</div>
-        <h5 className="text-md ">
-          Quick Response
-        </h5>
-      </div>
-    
-    </div>
-  </div>
-</div>
+      <hr className="my-20" />
+      {/* section 5 */}
+      <StandOutSection />
 
     </div>
   )
