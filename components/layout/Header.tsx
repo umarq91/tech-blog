@@ -31,6 +31,10 @@ function Header() {
           <Link href="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
           <Link href="/portfolio" className="hover:text-blue-600 transition">Portfolio</Link>
           <Link href="/company" className="hover:text-blue-600 transition">Company</Link>
+          <Link href="/careers" className="hover:text-blue-600 transition">Careers</Link>
+
+          
+          
 
 
         </nav>
@@ -83,7 +87,7 @@ function Header() {
           <Link href="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
           <Link href="/portfolio" className="hover:text-blue-600 transition">portfolio</Link>
           <Link href="/company" className="hover:text-blue-600 transition">Comapny</Link>
-
+          <Link href="/careers" className="hover:text-blue-600 transition">Careers</Link>
           
 
 
