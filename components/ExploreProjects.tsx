@@ -1,30 +1,31 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 function ExploreProjects() {
   const projects = [
     {
-      title: 'Empowering Agency Project',
+      title: 'Seamless Lotus Notes Migration',
       description:
-        'XQUIC revolutionized the hospitality industry with AI-driven reconciliation and seamless integration, saving hotels time and money while automating 95% of revenue management processes.',
+        'Transformed legacy workflows to SharePoint, enhancing efficiency. Achieved a 30% productivity boost with integrated .NET solutions.',
       imageUrl: 'https://cdn.prod.website-files.com/650311fc2ebc7fe34237a592/651daebda70cd59365ad95a3_2-components.webp',
     },
     {
-      title: 'Innovative E-Commerce Platform',
+      title: 'Intelligent Equipment Request Modernization',
       description:
-        'Revolutionizing online shopping with an AI-powered recommendation engine and personalized shopping experience, improving conversion rates by 25% and customer retention by 40%.',
+        'Developed a responsive web application for equipment requests. Improved operational workflows through Angular and .NET integration.',
       imageUrl: 'https://simpauldesign.com/wp-content/uploads/2019/02/sky.garden.jpg',
     },
     {
-      title: 'Healthcare System Modernization',
+      title: ' Robust Real Estate Lifecycle Management',
       description:
-        'Transforming healthcare systems with cutting-edge cloud technology and telemedicine solutions that improved patient engagement and reduced operational costs by 30%.',
+        "Modernized real estate bidding through cloud migration. Enabled high availability and scalability with Azure's serverless architecture.",
       imageUrl: 'https://www.wordstream.com/wp-content/uploads/2022/12/healthcare-website-design-examples-brightside.png',
     },
     {
-      title: 'Sustainable Energy Dashboard',
+      title: ' Smart Farming with AI and IoT',
       description:
-        'Providing a user-friendly dashboard for monitoring renewable energy sources, helping users track energy consumption, savings, and reduce carbon footprint by 15%.',
+        'Implemented intelligent irrigation for optimized crop management. Enhanced yields and reduced labor through real-time data insights.',
       imageUrl: 'https://cdn-ilaekap.nitrocdn.com/PHtGhqpMISHQletWXvpNyCuhTmLlyfvs/assets/images/optimized/rev-c51971d/acuvate.com/wp-content/uploads/2023/12/Green-Energy-10-1024x531.jpg',
     },
   ];
@@ -37,6 +38,7 @@ function ExploreProjects() {
 
       <div className='grid grid-cols-1 gap-6 md:grid-cols-2 place-items-center'>
         {projects.map((project, index) => (
+          <Link href="/portfolio">
           <div
             key={index}
             className='group relative  w-full h-[500px] bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer'
@@ -60,6 +62,7 @@ function ExploreProjects() {
               <p className='text-gray-600 text-sm'>{project.description}</p>
             </div>
           </div>
+            </Link>
         ))}
       </div>
     </div>

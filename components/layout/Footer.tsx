@@ -169,7 +169,7 @@ function Footer() {
                     2
                   </h3>
                   <p className="text-[18px] leading-[1px] font-dmSans text-inherit">
-                    Munutes
+                    Minutes
                   </p>
                 </div>
                 <h4 className="text-[14px] text-[#1351d8]  leading-[1px] font-light">

@@ -96,11 +96,10 @@ export default function Services() {
         >
 
           <p className="text-sm font-montserrat tracking-wider text-black uppercase">
-            • Hello THERE
           </p>
-          <h1 className="text-4xl mt-3 font-bold text-gray-800 mb-4">Our Services</h1>
+          <h1 className="text-4xl mt-3 font-bold text-gray-800 mb-4">Comprehensive IT Solutions</h1>
           <p className="text-lg text-gray-600">
-            We offer a diverse range of cutting-edge technology services, covering every domain within the tech industry. Our expertise spans the latest innovations, ensuring that we deliver tailored solutions to meet your unique business needs.
+          At H-Dot, we offer a wide range of services designed to enhance your digital infrastructure and drive business success. Below are our core services:
           </p>
                </motion.div>
 
