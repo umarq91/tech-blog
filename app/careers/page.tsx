@@ -4,74 +4,66 @@ import React from 'react';
 // Import FontAwesome for icons
 import { FaClock, FaDollarSign } from 'react-icons/fa';
 import Team from '../company/(components)/Team';
+import Link from "next/link"
 
 function Careers() {
     const services = [
         {
-          title: 'Development',
-          description: 'Our development is pixel perfect in all ways.',
+          title: 'Cloud Consulting',
+          description: 'We optimize your cloud strategy for seamless scalability.',
           logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
         },
         {
-          title: 'WooCommerce',
-          description: 'We have the best team for your shopping websites.',
-          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg',
+          title: 'Cybersecurity Services',
+          description: 'We safeguard your data with robust security measures.',
+          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
         },
         {
-          title: 'CRM Solutions',
-          description: 'We enhance customer experiences for success.',
-          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg',
+          title: 'Data Engineering',
+          description: 'We transform raw data into actionable insights.',
+          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
         },
         {
-          title: 'Web Design',
-          description: 'We create vibrant, intuitive, and minimalist websites.',
-          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg',
+          title: 'AI Solutions',
+          description: 'We integrate intelligent systems to enhance efficiency.',
+          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
         },
         {
-          title: 'IT Support',
-          description: 'We offer expert assistance for your IT issues.',
-          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg',
+          title: 'Blockchain Development',
+          description: 'We create secure and transparent blockchain applications',
+          logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
         },
         {
-            title: 'Development',
-            description: 'Our development is pixel perfect in all ways.',
+            title: 'Mobile App Development',
+            description: 'We design user-friendly mobile apps that engage users.',
             logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
           },
           {
-            title: 'WooCommerce',
-            description: 'We have the best team for your shopping websites.',
-            logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg',
+            title: 'DevOps Integration',
+            description: 'We streamline processes for faster, reliable software delivery.',
+            logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
           },
           {
-            title: 'CRM Solutions',
-            description: 'We enhance customer experiences for success.',
-            logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg',
+            title: 'IT Infrastructure Management',
+            description: 'We ensure optimal performance and security of your IT systems.',
+            logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
           },
-          {
-            title: 'Web Design',
-            description: 'We create vibrant, intuitive, and minimalist websites.',
-            logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg',
-          },
-          {
-            title: 'IT Support',
-            description: 'We offer expert assistance for your IT issues.',
-            logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg',
-          },
+ 
       ];
     
     
 
   const careers = [
     {
-      title: 'Front End Developer',
-      subtitle: 'Development',
-      experience: 'Minimum 5 years experience or above',
+      title: 'DevOps Engineer',
+      subtitle: 'Engineering',
+      experience: 'Minimum 3 years experience or above',
       type: 'Full Time',
       salary: '10-30k',
       location:'canada'
     },
     {
-      title: 'Back End Developer',
+      title: 'Senior DevOps Engineer',
       subtitle: 'Engineering',
       experience: 'Minimum 3 years experience or above',
       type: 'Part Time',
@@ -79,7 +71,7 @@ function Careers() {
       location:'Karachi'
     },
     {
-        title: 'Front End Developer',
+        title: 'Cloud Architect',
         subtitle: 'Development',
         experience: 'Minimum 5 years experience or above',
         type: 'Full Time',
@@ -87,9 +79,17 @@ function Careers() {
         location:'Lahore'
       },
       {
-        title: 'Back End Developer',
+        title: 'Senior Cloud Architect',
         subtitle: 'Engineering',
-        experience: 'Minimum 3 years experience or above',
+        experience: 'Minimum 7 years experience or above',
+        type: 'Part Time',
+        location:'USA',
+        salary: '15-25k',
+      },
+      {
+        title: 'AWS Solutions Architect',
+        subtitle: 'Engineering',
+        experience: 'Minimum 4 years experience or above',
         type: 'Part Time',
         location:'USA',
         salary: '15-25k',
@@ -105,14 +105,16 @@ function Careers() {
             Careers
           </button>
           <h1 className="text-3xl md:text-5xl lg:text-7xl max-w-[900px] font-yantramanav font-bold leading-snug">
-            You have great opportunities
+          Join H-Dot
           </h1>
           <h5 className="text-base md:text-lg max-w-3xl leading-relaxed">
-            If you are a talented and ambitious individual looking to make a mark in your career, we invite you to explore our career opportunities.
+          At H-Dot, we believe in empowering ambitious, talented individuals to make a lasting impact. If you're ready to take your career to the next level and thrive in an innovative environment, explore the opportunities we have to offer. Join us, and let's shape the future together.
           </h5>
+          <Link href={"/contact-us"}>
           <button className="bg-blue-700 text-white py-3 px-6 rounded-2xl">
             Book an appointment now
           </button>
+          </Link>
         </div>
       </div>
 
@@ -123,11 +125,11 @@ function Careers() {
           <div className="flex flex-col md:flex-row gap-6 mb-8">
             <div className="flex-1 p-4">
               <p className="text-blue-600 text-[9px] leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
-              <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
+              <h1 className="text-4xl font-bold mb-4">Comprehensive IT Solutions Tailored for Your Success</h1>
             </div>
             <div className="flex-1 flex justify-center items-center md:px-10">
               <p className="text-white text-xs text-center md:text-left">
-                One fundamental aspect of IT services is infrastructure management. This involves the design, implementation, and maintenance of the hardware, software, networks, and servers.
+              In the ever-evolving landscape of technology, infrastructure management is essential. This includes designing, implementing, and maintaining hardware, software, networks, and servers to ensure optimal performance and security.
               </p>
             </div>
           </div>
@@ -147,7 +149,7 @@ function Careers() {
 
 
             <div className="flex justify-center ">
-        <button className="text-center text-black my-10 text-lg font-poppins">Apply now at <span className='text-blue-700'>  xyz@gmail.com </span></button>
+        <button className="text-center text-black my-10 text-lg font-poppins">Apply now at <span className='text-blue-700'>  admin@h-dot.tech </span></button>
         </div>
                     <div className='flex flex-col md:flex-row md:p-20'>
 
@@ -155,9 +157,9 @@ function Careers() {
                 <div className="flex-1 max-w-lg mx-auto justify-start flex flex-col mb-8 md:mb-0 md:pr-10 md:sticky md:top-0">
                 <div className="max-w-lg">
                     <p className="text-blue-600 text-[10px] leading-3 mb-4 tracking-[3px] font-semibold font-syne uppercase">OPENING IN OUR COMPANY</p>
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Job openings and career opportunities</h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Exciting Career Opportunities at H-Dot</h1>
                     <p className="text-sm text-gray-400">
-                    Our location is strategically situated at the heart of City, making it an ideal destination for businesses and visitors alike.
+                    Join our innovative team at H-Dot, where we are at the forefront of technology solutions. Our California office is a vibrant hub for talented individuals ready to make a significant impact in the IT landscape.
                     </p>
                 </div>
                 </div>
@@ -175,7 +177,7 @@ function Careers() {
                             </h2>
                             <p className="text-xs text-gray-600">{career.experience}</p>
                         </div>
-                        <button className="text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition">{career.location}</button>
+                        {/* <button className="text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition">{career.location}</button> */}
                         </div>
 
                         {/* Bottom Section with icons */}
@@ -206,14 +208,16 @@ function Careers() {
 
           <div className="flex flex-col md:flex-row gap-6 mb-8">
             <div className="flex-1 p-4">
-              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">Mentor</p>
-              <h1 className="text-4xl font-bold mb-4">Our leadership and mentors</h1>
-              <p>Our team is a collective force of top talents, experts, and visionaries from diverse fields</p>
+              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">Mentorship Excellence</p>
+              <h1 className="text-4xl font-bold mb-4">Our Leadership and Mentors</h1>
+              <p>At H-Dot, our leadership team is a powerhouse of top talents, industry experts, and visionary thinkers from various fields. Together, they guide our mission, foster innovation, and inspire our teams to achieve greatness.</p>
             </div>
             <hr/>
 
             <div className="flex-1 flex justify-end items-end md:px-10">
+              <Link href="/contact-us">
               <button className='w-[70%] bg-blue-700 text-white py-3 px-6  rounded-xl' > Book an appointment with experts </button>
+              </Link>
             </div>
           </div>
         </div>

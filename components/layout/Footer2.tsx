@@ -105,7 +105,7 @@ const Footer2 = () => {
               </div>
               <div className="footer-experience-item text-[#ffffff] space-y-2 ">
                 <h2 className="text-[22px] leading-[1px] font-dmSans font-normal  text-inherit">
-                  22+ <span className="text-[12px] ">Years</span>
+                  15+ <span className="text-[12px] ">Years</span>
                 </h2>
                 <p className="text-[12px] leading-[24px] text-[#ffffffcc]">
                   Field Experience

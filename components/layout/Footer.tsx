@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -12,11 +13,11 @@ function Footer() {
                 Contact
               </h5>
               <h2 className="text-[40px] mb-6 leading-[1px] mt-4  lg:text-5xl tracking-[-1px] font-bold">
-                Let's get in touch
+              Let’s Connect!
               </h2>
               <h5 className="text-lg">
-                You can reach us anytime via{" "}
-                <span className="text-[#1351db]">bluebase@mail.com</span>
+              We're here for you! Reach out anytime at
+                <span className="text-[#1351db]">admin@h-dot.tech.</span>
               </h5>
             </div>
             <hr className="border border-gray-300 mt-6" />
@@ -116,27 +117,27 @@ function Footer() {
               <div className="flex flex-col justify-center gap-4">
                 <div className="flex mb-3">
                   <h3 className="mb-[6px] leading-[1px] text-[36px] font-medium font-dmSans text-normal text-inherit ">
-                    22+
+                   15+
                   </h3>
                   <p className="text-[18px] leading-[1px] font-dmSans text-inherit">
                     Years
                   </p>
                 </div>
                 <h4 className="text-[14px] text-[#1351d8]  leading-[1px] font-light">
-                  Field Experience
+                  Industry Experience
                 </h4>
               </div>
               <hr className="border border-gray-300" />
               <div className="flex items-center gap-2">
                 <h3 className=" leading-[1px] text-[36px] font-medium font-dmSans text-normal text-inherit">
-                  950+
+                  500+
                 </h3>
                 <p className="text-[18px] leading-[1px] font-dmSans  text-inherit">
                   Projects
                 </p>
               </div>
               <h4 className="text-[14px] text-[#1351d8]  leading-[1px] font-light">
-                Done around the world
+               Completed Worldwide
               </h4>
               <hr className="border border-gray-300" />
               <div className="flex flex-col justify-center gap-4">
@@ -146,18 +147,16 @@ function Footer() {
                   </h3>
                 </div>
                 <h4 className="text-[14px] text-[#1351d8]  leading-[1px] font-light">
-                  Client Satisfaction
+                  Client Satisfaction Rate
                 </h4>
               </div>
               <hr className="border border-gray-300" />
               <div className="flex flex-col justify-center gap-4">
                 <div className="flex mb-3">
                   <h3 className="mb-[6px] leading-[1px] text-[36px] font-medium font-dmSans text-normal text-inherit ">
-                    1995+
+                   2019
                   </h3>
-                  <p className="text-[18px] leading-[1px] font-dmSans text-inherit">
-                    Years
-                  </p>
+            
                 </div>
                 <h4 className="text-[14px] text-[#1351d8]  leading-[1px] font-light">
                   Established On
@@ -170,11 +169,11 @@ function Footer() {
                     2
                   </h3>
                   <p className="text-[18px] leading-[1px] font-dmSans text-inherit">
-                    Mins
+                    Munutes
                   </p>
                 </div>
                 <h4 className="text-[14px] text-[#1351d8]  leading-[1px] font-light">
-                  Response Time
+                 Average Response Time
                 </h4>
               </div>
             </div>
@@ -192,10 +191,10 @@ function Footer() {
                       Contact Info
                     </h3>
                     <p className="text-[12px] text-[#1c1c1ccc] leading-[24px]  ">
-                      +1 455 1482 236
+                      +1 (949) 247-9542
                     </p>
                     <p className="text-[12px] text-[#1c1c1ccc] leading-[24px] ">
-                      Bluebase@mail.com
+                    admin@h-dot.tech
                     </p>
                   </div>
                 </div>
@@ -210,22 +209,23 @@ function Footer() {
                       Visit our office
                     </h3>
                     <p className="text-[12px] text-[#1c1c1ccc] leading-[24px]">
-                      16/9, Down Street
+                    3795 Plantation Centre
                     </p>
                     <p className="text-[12px] text-[#1c1c1ccc] leading-[24px]">
-                      Edinburgh, Scotland
+                    Corona, California 92881
                     </p>
                     <p className="text-[12px] text-[#1c1c1ccc] leading-[24px]">
-                      United Kingdom
+                     USA
                     </p>
                   </div>
                 </div>
                 <hr className="border w-full border-gray-300" />
                 <ul className="py-8 text-[#1c1c1ccc] space-y-4">
-                    <li>Dribbble</li>
+                    {/* <li>Dribbble</li>
                     <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>linkedin</li>
+                    <li>Instagram</li> */}
+                    <Link href="https://www.linkedin.com/company/104643157"> <li>LinkedIn</li>   </Link>
+                    
                 </ul>
               </div>
             </div>
