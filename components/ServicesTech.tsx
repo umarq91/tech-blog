@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 // Reusable ServiceCard Component with Animation
-const ServiceCard = ({ title, description, imageUrl, reverse = false }: any) => {
+const ServiceCard = ({ title, description, imageUrl,intro, reverse = false }: any) => {
   // Ref and inView for triggering animation on scroll
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // Animates only once when it first comes into view
@@ -17,7 +17,7 @@ const ServiceCard = ({ title, description, imageUrl, reverse = false }: any) => 
       transition={{ duration: 0.6, ease: 'easeOut' }} // Animation timing
     >
       <div className="md:px-10 flex-1">
-        <p className="text-sm font-montserrat tracking-wider text-black uppercase">• Hello THERE</p>
+        <p className="text-sm font-montserrat tracking-wider text-black uppercase">•{intro}</p>
         <h1 className="text-4xl mt-3 font-bold text-gray-800 mb-4">{title}</h1>
         <p className="text-lg text-gray-600">{description}</p>
       </div>
@@ -32,31 +32,43 @@ function ServicesTech() {
   return (
     <div className="flex flex-col gap-10">
       <ServiceCard
+      intro={"Collaborative & Streamlined"}
         title="DevOps"
-        description="We offer a diverse range of cutting-edge technology services, covering every domain within the tech industry. Our expertise spans the latest innovations, ensuring that we deliver tailored solutions to meet your unique business needs."
+        description="H-Dot specializes in DevOps practices that enhance collaboration between development and operations teams. Our solutions streamline workflows, automate processes, and accelerate delivery times, ensuring faster and more reliable deployments."
         imageUrl="https://nickjanetakis.com/assets/blog/cards/what-is-devops.jpg"
       />
       <ServiceCard
-        title="Certified Cloud Experts"
-        description="Our cloud experts deliver scalable, secure cloud solutions to power your business. From cloud migration to multi-cloud management, we ensure a seamless transition and optimal performance."
+      intro={"Flexible & Scalable"}
+        title="Cloud Solutions"
+        description="We provide comprehensive cloud consulting, migration, and management services to optimize your cloud infrastructure. Our solutions ensure scalability, security, and cost-effectiveness, enabling your business to thrive in a digital environment."
         imageUrl="https://cdn-icons-png.freepik.com/512/4215/4215831.png"
         reverse={true}
       />
       <ServiceCard
-        title="Full Stack Development"
-        description="We build end-to-end web and mobile applications using the latest technologies. Our full stack development services ensure robust, scalable, and secure solutions tailored to your needs."
+      intro={"Transformative & Intelligent"}
+        title="AI Solutions"
+        description="Leverage the potential of artificial intelligence with our tailored AI solutions. We help you integrate AI technologies to improve efficiency, automate tasks, and enhance customer experiences across your organization."
         imageUrl="https://potomac.edu/wp-content/uploads/2020/12/benefits-of-coding-e1606911064541.jpg"
       />
       <ServiceCard
-        title="Data Engineering & Analytics"
-        description="Leverage the power of data to gain valuable insights and drive business growth. We provide data engineering and analytics services to help you store, process, and analyze data effectively."
+      intro={"Insightful & Innovative"}
+        title="Data Engineering"
+        description="We harness the power of data to provide actionable insights. Our data engineering services include data extraction, transformation, and visualization, enabling your business to make informed decisions based on accurate information."
         imageUrl="https://www.theforage.com/blog/wp-content/uploads/2023/02/what-is-a-data-engineer.jpg"
         reverse={true}
       />
       <ServiceCard
-        title="AI Solutions & Blockchain Development"
-        description="Unlock the potential of AI and blockchain technologies. From AI-driven automation to decentralized solutions, we offer cutting-edge expertise in developing transformative business solutions."
+      intro={"Secure & Decentralized"}
+        title="Blockchain Technology"
+        description="H-Dot offers blockchain consulting and implementation services to enhance security and transparency in transactions. Our expertise helps businesses explore decentralized solutions that align with their operational goals."
         imageUrl="https://i0.wp.com/swisscognitive.ch/wp-content/uploads/2023/11/The-Synergy-of-AI-Blockchain-What-are-the-Use-Cases.png?fit=960%2C540&ssl=1"
+      />
+           <ServiceCard
+      intro={"Robust & Proactive"}
+        title="Cybersecurity"
+        reverse={true}
+        description="Our cybersecurity services protect your organization from evolving threats. We assess vulnerabilities, implement robust security measures, and ensure compliance with industry standards, safeguarding your assets and data."
+        imageUrl="https://focus.namirial.com/en/wp-content/uploads/sites/4/2023/06/ai-in-cybersecurity.jpeg"
       />
     </div>
   );
