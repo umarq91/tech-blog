@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function Introduction() {
   // Define animation variants
@@ -24,23 +25,27 @@ function Introduction() {
         >
           {/* content */}
           <div className='flex flex-col gap-2 '>
-            <h5 className='text-[10px] text-blue-800  font-[500] font-syne tracking-[6px] uppercase'>Empowernment</h5>
+            <h5 className='text-[10px] text-blue-800  font-[500] font-syne tracking-[6px] uppercase'>Digital Transformation</h5>
             <div className='flex flex-col gap-8  items-start'>
               <h1 className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-900 font-[500]'>
-                Seamless IT for your business, boosting your growth
+              Seamless & Innovative IT Solutions for Business Growth and Resilience
               </h1>
               <p className='text-[#212529] leading-7 text-base md:text-lg md:pr-10 tracking-wild font-montserrat'>
-                We provide the expertise and support to propel your business forward in the digital landscape.
+              From cloud to Cybersecurity, H-Dot delivers comprehensive IT services that power growth and innovation.
               </p>
             </div>
             {/* buttons */}
             <div className='flex gap-4 mt-8'>
+              <Link href={"/about"}>
               <button className='bg-[#1351d8] rounded-full text-white px-6 py-2'>
                 Learn More
               </button>
+              </Link >
+              <Link href={"/contact-us"}>
               <button className='bg-gray-300 rounded-full text-blue-800 px-8 text-xs py-2'>
                 Let's Talk
               </button>
+              </Link>
             </div>
           </div>
         </motion.div>

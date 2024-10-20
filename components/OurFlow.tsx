@@ -8,30 +8,29 @@ function OurFlow() {
         {/* Left side text */}
         <div className="flex flex-col  items-start justify-between lg:max-w-[350px] mb-16 w-full">
           <p className="text-[#1351d8] text-[10px] uppercase font-syne font-medium  tracking-[7px] leading-[1.2px] box-border mb-[20px]">
-            consulting excellence
+          Strategic Pathway
           </p>
 
           <h2 className="text-[32px] lg:text-[50px] font-bold text-gray-800 mb-[25px] font-yantramanav leading-[40px] lg:leading-[56px] tracking-[-1px] text-inherit box-border text-left">
-            Best pathway to our clients.
+          Your Path to Optimal IT Transformation
           </h2>
           <p className="text-gray-600 text-left text-[15px] leading-[21px] mb-[50px] box-border">
-            Our consulting process begins with a thorough assessment of your
-            current IT infrastructure, workflows, and pain points.
+          Our consulting process ensures a seamless transformation by understanding your business inside and out.
           </p>
 
           {/* List of benefits */}
           <ul className="space-y-4 text-gray-800 leading-[1.2px]">
             <li className="flex items-center gap-2">
               <CircleCheck strokeWidth={1.5} fill="#4287f5" stroke="white" />
-              24/7 Full Service Support
+              Round-the-Clock Support
             </li>
             <li className="flex items-center gap-2">
               <CircleCheck strokeWidth={1.5} fill="#4287f5" stroke="white" />
-              Immediate Response
+              Swift Solutions
             </li>
             <li className="flex items-center gap-2">
               <CircleCheck strokeWidth={1.5} fill="#4287f5" stroke="white" />
-              Easy to Approach us
+              Approachable Experts
             </li>
           </ul>
         </div>
@@ -52,7 +51,7 @@ function OurFlow() {
                   Discovery and Analysis
                 </h4>
                 <p className="text-[13px] leading-[19.5px] ">
-                  Perform an analysis of the client's existing IT systems.
+                We evaluate your infrastructure, workflows, and goals to find your biggest opportunities
                 </p>
               </div>
             </div>
@@ -71,7 +70,7 @@ function OurFlow() {
                   Tailored Solutions
                 </h4>
                 <p className="text-[13px] leading-[19.5px] ">
-                  Develop IT solutions based on the analysis phase.
+                Designing customized strategies that align with your specific business objectives.
                 </p>
               </div>
             </div>
@@ -90,7 +89,7 @@ function OurFlow() {
                   Deployment and Support
                 </h4>
                 <p className="text-[13px] leading-[19.5px]">
-                  Regularly communicate with our client to address any concerns.
+                Ensuring smooth implementation and providing ongoing support for sustained success
                 </p>
               </div>
             </div>
