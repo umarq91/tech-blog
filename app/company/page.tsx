@@ -47,34 +47,35 @@ function Comapny() {
             Company
           </button>
           <h1 className='text-3xl md:text-5xl  lg:text-7xl max-w-[900px] font-yantramanav font-bold text-[#212529] leading-snug'>
-          Our company provide a best horizon tech solutions
+          Empowering Your Business for a Digital-First World
           </h1>
           <h5 className='text-gray-700 text-base md:text-lg  max-w-3xl leading-relaxed'>
-          Experience the transformative power of innovation and seamless solutions with dynamics. Our journey doesn't end with the delivery of a solution.          </h5>
+          At H-Dot, we deliver cutting-edge technology solutions that evolve with you. Our commitment extends beyond project delivery; we drive transformation that lasts.
+          </h5>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-10  place-items-center">
   <div className="flex flex-col items-center justify-center text-center gap-2">
-    <h1 className="text-[#1351D8] font-semibold font-poppins text-4xl sm:text-5xl">300+</h1>
-    <h5 className="text-lg sm:text-xl font-medium">Project</h5>
-    <p className="text-gray-500 max-w-xs">We are spread around the world.</p>
+    <h1 className="text-[#1351D8] font-semibold font-poppins text-4xl sm:text-5xl">500++</h1>
+    <h5 className="text-lg sm:text-xl font-medium">Projects</h5>
+    <p className="text-gray-500 max-w-xs">successfully completed, spanning across industries and continents.</p>
   </div>
 
   <div className="flex flex-col items-center justify-center text-center gap-2">
-    <h1 className="text-[#1351D8] font-semibold font-poppins text-4xl sm:text-5xl">100%</h1>
+    <h1 className="text-[#1351D8] font-semibold font-poppins text-4xl sm:text-5xl">99%%</h1>
     <h5 className="text-lg sm:text-xl font-medium">Client satisfaction</h5>
-    <p className="text-gray-500 max-w-xs">We are spread around the world.</p>
+    <p className="text-gray-500 max-w-xs"></p>
   </div>
 
   <div className="flex flex-col items-center justify-center text-center gap-2">
     <h1 className="text-[#1351D8] font-semibold font-poppins text-4xl sm:text-5xl">15k+</h1>
     <h5 className="text-lg sm:text-xl font-medium">Legal Customers</h5>
-    <p className="text-gray-500 max-w-xs">We are spread around the world.</p>
+    <p className="text-gray-500 max-w-xs"> who trust H-Dot for their technology needs and digital transformations.</p>
   </div>
 
   <div className="flex flex-col items-center justify-center text-center gap-2">
-    <h1 className="text-[#1351D8] font-semibold font-poppins text-4xl sm:text-5xl">1995</h1>
-    <h5 className="text-lg sm:text-xl font-medium">We established on</h5>
-    <p className="text-gray-500 max-w-xs">We are spread around the world.</p>
+    <h1 className="text-[#1351D8] font-semibold font-poppins text-4xl sm:text-5xl">Since 2019</h1>
+    <h5 className="text-lg sm:text-xl font-medium">Established as a pioneer</h5>
+    <p className="text-gray-500 max-w-xs">in tech innovation, we continue to lead with vision and expertise.</p>
   </div>
 </div>
 

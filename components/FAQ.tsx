@@ -13,10 +13,12 @@ function FAQ() {
   };
 
   const faqData = [
-    { question: 'How to create an account?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
-    { question: 'How can I make payment using Paypal?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
-    { question: 'Can I cancel my plan?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
-    { question: 'How can I reach support?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
+    { question: 'What cloud solutions does H-Dot provide?', answer: 'H-Dot specializes in cloud solutions across platforms like AWS, Azure, and Google Cloud Platform (GCP). We design and implement strategies to optimize cloud performance, scalability, and cost efficiency tailored to your business needs.' },
+    { question: 'How does H-Dot approach DevOps?', answer: 'Our DevOps services integrate development and operations to enhance collaboration and efficiency. We utilize tools like CI/CD pipelines and automation to streamline processes and ensure faster delivery cycles.' },
+    { question: 'What is the typical timeline for a project?', answer: 'Project timelines can vary based on scope and complexity, but we work to establish clear milestones and deliverables, ensuring transparency throughout the process.' },
+    { question: 'How does H-Dot ensure data security?', answer: 'We implement stringent security measures, including encryption, access controls, and regular audits, to protect your data across all systems and platforms.' },
+    { question: 'How do I get started with H-Dot?', answer: 'Getting started is simple! Reach out to us via our contact page to schedule a consultation, and we’ll guide you through our process to identify the best solutions for your business.' },
+
   ];
 
   return (
@@ -68,14 +70,7 @@ function FAQ() {
                 <div className="px-4 pb-5 sm:px-6 sm:pb-6">
                   <p>
                     {item.answer}{' '}
-                    <a
-                      href="#"
-                      title=""
-                      className="text-blue-600 transition-all duration-200 hover:underline"
-                    >
-                      aliqua dolor
-                    </a>{' '}
-                    do amet sint. Velit officia consequat duis enim velit mollit.
+  
                   </p>
                 </div>
               )}
