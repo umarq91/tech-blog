@@ -63,27 +63,44 @@ function AboutPage() {
       >
         {/* Story */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: 'easeInOut' }}
-          className="text-center"
-        >
-          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-4 text-gray-900">
-            Our Story
-          </h2>
-          <p className="text-lg md:text-xl text-gray-600">
-          At H-Dot, we are not just a tech company; we are a group of dreamers and innovators committed to transforming the way individuals and businesses engage with technology. Based in the heart of California, we recognize that the digital landscape can be daunting, filled with challenges and opportunities that can often feel out of reach.
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{ duration: 0.8, ease: 'easeInOut' }}
+  className="text-center space-y-6"
+>
+  <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-4 text-gray-900">
+    Our Story
+  </h2>
+  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+    At <span className="font-bold">H-Dot</span>, we are not just a tech company—we are a group of dreamers and innovators committed to transforming the way individuals and businesses engage with technology. Based in the heart of <span className="italic">California</span>, we recognize that the digital landscape can be daunting, filled with challenges and opportunities that can often feel out of reach.
+  </p>
 
-We believe that technology should empower, not intimidate. Many talented individuals and businesses struggle to navigate the complexities of today’s digital world, often feeling overwhelmed by the rapid pace of change. This is where H-Dot makes a difference. Our mission is to demystify technology and provide accessible solutions that propel you forward.
+  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+    We believe that <span className="font-bold">technology should empower</span>, not intimidate. Many talented individuals and businesses struggle to navigate the complexities of today’s digital world, often feeling overwhelmed by the rapid pace of change. This is where H-Dot makes a difference.
+  </p>
 
-H-Dot stands for hope and determination. We offer tailored services that encompass cloud optimization, data engineering, cybersecurity, and more—each designed to help you harness the power of technology to achieve your goals. Whether you’re an entrepreneur aiming to streamline your operations or a professional seeking to upskill, we’re here to support you every step of the way.
+  <blockquote className="border-l-4 border-blue-500 pl-4 text-gray-600 italic">
+    "Our mission is to demystify technology and provide accessible solutions that propel you forward."
+  </blockquote>
 
-Our passion for technology is matched only by our dedication to our clients. We pride ourselves on providing comprehensive support, ensuring that your journey into the digital realm is not only successful but also fulfilling. We believe in fostering a collaborative environment where ideas flourish, and innovation thrives.
+  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+    <span className="font-bold">H-Dot</span> stands for hope and determination. We offer tailored services that encompass <span className="font-semibold">cloud optimization</span>, <span className="font-semibold">data engineering</span>, <span className="font-semibold">cybersecurity</span>, and more—each designed to help you harness the power of technology to achieve your goals.
+  </p>
 
-At H-Dot, we envision a future where technology serves as a bridge to your aspirations, turning challenges into opportunities and dreams into reality. Together, let’s navigate this exciting digital landscape and create a future where your potential is limitless. Join us in this journey, and let’s build something extraordinary together.
-          </p>
-        </motion.div>
+  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+    Whether you’re an entrepreneur aiming to streamline your operations or a professional seeking to upskill, we’re here to support you every step of the way.
+  </p>
+
+  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+    Our passion for technology is matched only by our dedication to our clients. We pride ourselves on providing comprehensive support, ensuring that your journey into the digital realm is not only successful but also fulfilling.
+  </p>
+
+  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+    Together, let’s navigate this exciting digital landscape and create a future where your potential is limitless. Join us on this journey, and let’s build something extraordinary together.
+  </p>
+</motion.div>
+
 
         {/* Vision */}
         <motion.div
