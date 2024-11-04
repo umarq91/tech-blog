@@ -157,7 +157,8 @@ function AboutPage() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, ease: 'easeInOut' }}
       >
-        <OurTeam />
+        {/* this can be added later on */}
+        {/* <OurTeam /> */}
       </motion.div>
     </section>
   );

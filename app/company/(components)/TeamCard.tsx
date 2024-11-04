@@ -1,25 +1,33 @@
 import React from 'react';
 import { FaGlobe, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-function TeamCard() {
-  return (
-    <div className='min-h-[350px] py-10 flex flex-col gap-2 justify-center items-center bg-blue-50'>
-      <img
-        src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg"
-        className='h-24 w-24 rounded-full object-cover'
-        alt="Team member"
-      />
-      <h2 className='text-xl font-bold'>Jennifer Linda</h2>
-      <h5 className='text-blue-700'>Product Designer</h5>
+interface TeamCardProps {
+  image: string;
+  position: string;
+  name: string; // Added name prop
+}
 
-      <div className="bg-white flex gap-4 p-2 justify-center w-[200px] rounded-lg">
-        {/* Icons */}
+const TeamCard: React.FC<TeamCardProps> = ({ image, position, name }) => {
+  return (
+    <div className='min-h-[400px] text-center p-5 flex flex-col gap-2 justify-center items-center bg-blue-50 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105'>
+      <img
+        src={image}
+        className='h-36 w-36 rounded-full object-cover border-4 border-blue-400'
+        alt={`${name} - ${position}`}
+      />
+      <h5 className='text-blue-700 lg:text-2xl font-semibold'>{name}</h5>
+      <p className='text-gray-500'>{position}</p>
+         {/* Socials */}
+      {/* <div className="bg-white flex gap-4 p-2 justify-center w-[200px] rounded-lg">
         <FaGlobe className="text-blue-500 h-4 w-4" />
         <FaTwitter className="text-blue-500 h-4 w-4" />
         <FaInstagram className="text-blue-500 h-4 w-4" />
-      </div>
+      </div> */}
     </div>
   );
 }
 
 export default TeamCard;
+
+
+   
