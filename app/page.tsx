@@ -16,7 +16,6 @@ function Home() {
       <Introduction />
       <hr className='my-10 border border-gray-200' />
       {/* <OurWork/> */}
-      <h1 className='text-3xl md:text-5xl text-gray-900 font-bold text-center'> Our Partners </h1>
 
       <MarqueeLogo />
 

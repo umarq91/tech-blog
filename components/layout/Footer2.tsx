@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from 'next/link';
 const Footer2 = () => {
   return (
     <div className="py-16 pl-6 lg:px-24 bg-[#1c1c1c] w-[100vw]">
@@ -76,16 +76,18 @@ const Footer2 = () => {
               Let’s get started on something great
             </p>
             <p className="leading-[24px] text-[14px] text-[#ffffffcc] mb-[35px] box-border">
-              Our team of IT experts looks forward to meeting with you <br />{" "}
-              and providing valuable insights tailored to your business.
+            Our cloud experts are ready to collaborate and offer <br/>
+             tailored insights to elevate your busines
             </p>
+            <Link href={"/contact-us"}>
             <button
               className="h-[31px] text-[12px] py-[13px] px-[26px] rounded-md leading-[1px]
-           text-[#f9f9f9] bg-[#1351db]
-            "
-            >
+              text-[#f9f9f9] bg-[#1351db]
+              "
+              >
               Get an appointment now
             </button>
+              </Link>
             <div className="footer-experience d-flex align-items-center flex gap-[60px] mt-[38px]  ">
               <div className="footer-experience-item text-[#ffffff] space-y-2 ">
                 <h2 className="text-[22px] leading-[1px] font-dmSans font-normal  text-inherit">

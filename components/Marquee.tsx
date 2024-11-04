@@ -1,49 +1,47 @@
-'use client'
+'use client';
 import React from "react";
 import { motion } from "framer-motion";
+import Marquee from "@/components/ui/marquee"; // Ensure this path is correct
 
 const logos = [
-  { src: "https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/Adidas.png", alt: "Adidas" },
-  { src: "https://diginsights.com/wp-content/uploads/2024/03/starbsloh.png.jpeg", alt: "Starbucks" },
-  { src: "https://www.designrush.com/uploads/users/customer-12/image_1532370530_PUupRl8PHyZvMCs2KRMuskJdYeyqW3IeacT72WYE.png", alt: "Google" },
-  { src: "https://cdn.mos.cms.futurecdn.net/LBqfDL2QXnvGZGYq3V6r5C-320-80.jpg", alt: "Nike" },
-  { src: "https://images.squarespace-cdn.com/content/v1/5ede2122e582b96630a4a73e/1609375996518-DZU53FYNB3FMBYB1JHG6/HP-logo+2021.jpg", alt: "HP" },
+  { src: "/logos/1.png", alt: "Adidas" },
+  { src: "/logos/2.png", alt: "Adidas" },
+  { src: "/logos/3.png", alt: "Adidas" },
+  { src: "/logos/4.png", alt: "Adidas" },
+  { src: "/logos/5.png", alt: "Adidas" },
+  { src: "/logos/6.png", alt: "Adidas" },
+  { src: "/logos/7.png", alt: "Adidas" },
+  { src: "/logos/8.png", alt: "Adidas" },
+  { src: "/logos/9.png", alt: "Adidas" },
+  { src: "/logos/10.png", alt: "Adidas" },
+  { src: "/logos/11.png", alt: "Adidas" },
+  { src: "/logos/12.png", alt: "Adidas" },
+  { src: "/logos/13.png", alt: "Adidas" },
+  { src: "/logos/14.png", alt: "Adidas" },
+  { src: "/logos/15.png", alt: "Adidas" },
 ];
 
 const MarqueeLogo = () => {
-  const marqueeVariants = {
-    animate: {
-      x: ["0%", "-100%"], // Move from right to left
-      transition: {
-        x: {
-          repeat: Infinity, // Infinite loop
-          repeatType: "loop", // Loop the animation
-          duration: 20, // Adjust this value to control the speed
-          ease: "linear", // Ensure constant speed with linear ease
-        },
-      },
-    },
-  };
-
   return (
-    <div className="overflow-hidden  py-8"> {/* Container with padding */}
-      <div className="relative w-full flex items-center">
-        <motion.div
-          className="flex space-x-12 items-center"
-          variants={marqueeVariants}
-          animate="animate"
-        >
-          {/* Render logos twice to create seamless scroll effect */}
-          {[...logos, ...logos].map((logo, index) => (
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+      <Marquee pauseOnHover className="[--duration:20s]">
+        {logos.map((logo, index) => (
+          <div
+            key={index}
+            className="bg-white w-[200px] flex justify-center items-center p-4 shadow-lg rounded-lg"
+          >
             <img
-              key={index}
               src={logo.src}
               alt={logo.alt}
-              className="h-24 w-auto" 
+              className="h-16 w-auto object-contain"
             />
-          ))}
-        </motion.div>
-      </div>
+          </div>
+        ))}
+      </Marquee>
+
+      {/* Gradient effects for visual enhancement */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
     </div>
   );
 };

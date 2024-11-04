@@ -8,25 +8,25 @@ function ExploreProjects() {
       title: 'Seamless Lotus Notes Migration',
       description:
         'Transformed legacy workflows to SharePoint, enhancing efficiency. Achieved a 30% productivity boost with integrated .NET solutions.',
-      imageUrl: 'https://cdn.prod.website-files.com/650311fc2ebc7fe34237a592/651daebda70cd59365ad95a3_2-components.webp',
+      imageUrl: '/1.png',
     },
     {
       title: 'Intelligent Equipment Request Modernization',
       description:
         'Developed a responsive web application for equipment requests. Improved operational workflows through Angular and .NET integration.',
-      imageUrl: 'https://simpauldesign.com/wp-content/uploads/2019/02/sky.garden.jpg',
+      imageUrl: '/2.png',
     },
     {
       title: ' Robust Real Estate Lifecycle Management',
       description:
         "Modernized real estate bidding through cloud migration. Enabled high availability and scalability with Azure's serverless architecture.",
-      imageUrl: 'https://www.wordstream.com/wp-content/uploads/2022/12/healthcare-website-design-examples-brightside.png',
+      imageUrl: '/3.png',
     },
     {
       title: ' Smart Farming with AI and IoT',
       description:
         'Implemented intelligent irrigation for optimized crop management. Enhanced yields and reduced labor through real-time data insights.',
-      imageUrl: 'https://cdn-ilaekap.nitrocdn.com/PHtGhqpMISHQletWXvpNyCuhTmLlyfvs/assets/images/optimized/rev-c51971d/acuvate.com/wp-content/uploads/2023/12/Green-Energy-10-1024x531.jpg',
+      imageUrl: '/4.png',
     },
   ];
 
@@ -38,7 +38,7 @@ function ExploreProjects() {
 
       <div className='grid grid-cols-1 gap-6 md:grid-cols-2 place-items-center'>
         {projects.map((project, index) => (
-          <Link href="/portfolio">
+          <Link key={index} href="/portfolio">
           <div
             key={index}
             className='group relative  w-full h-[500px] bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer'
