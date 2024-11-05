@@ -18,7 +18,7 @@ function Footer() {
               </h2>
               <h5 className="text-lg">
               We're here for you! Reach out anytime at
-                <span className="text-[#1351db]">admin@h-dot.tech.</span>
+                <span className="text-[#1351db]">{" "} admin@h-dot.tech.</span>
               </h5>
             </div>
             <hr className="border border-gray-300 mt-6" />
@@ -139,7 +139,7 @@ function Footer() {
                     {/* <li>Dribbble</li>
                     <li>Twitter</li>
                     <li>Instagram</li> */}
-                    <Link href="https://www.linkedin.com/company/104643157"> <li>LinkedIn</li>   </Link>
+                    {/* <Link href="https://www.linkedin.com/company/104643157"> <li>LinkedIn</li>   </Link> */}
                     
                 </ul>
               </div>

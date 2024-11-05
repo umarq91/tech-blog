@@ -20,7 +20,7 @@ function Header() {
             <img
               src="/logo.png"
               alt="Logo"
-              className="h-8 w-8 cursor-pointer transition-transform duration-300 hover:scale-110"
+              className="h-12 w-10 cursor-pointer transition-transform duration-300 hover:scale-110"
               style={{ filter: 'invert(1)' }}
             />
           </Link>

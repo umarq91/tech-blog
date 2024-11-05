@@ -27,7 +27,7 @@ function ServicesSection({ item, index }: any) {
       variants={cardVariants} // Use the defined variants
       transition={{ duration: 0.5, delay: index * 0.1 }} // Add stagger effect
     >
-      <img src={item?.logo} alt={item?.title} className="h-10 w-10 mb-4 object-contain" />
+      <img src={'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg'} alt={item?.title} className="h-10 w-10 mb-4 object-contain" />
       <h3 className="text-lg font-semibold mb-2">{item?.title}</h3>
       <p className="text-gray-600 text-xs">{item?.description}</p>
     </motion.div>

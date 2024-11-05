@@ -124,7 +124,7 @@ function Careers() {
         <div className="max-w-7xl mx-auto p-6 md:p-12 font-montserrat">
           <div className="flex flex-col md:flex-row gap-6 mb-8">
             <div className="flex-1 p-4">
-              <p className="text-blue-600 text-[9px] leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
+              <p className="text-blue-600 text-[9px] leading-3 mb-5 tracking-[3px] font-semibold font-syne captialize">WHAT WE'RE OFFERING</p>
               <h1 className="text-4xl font-bold mb-4">Comprehensive IT Solutions Tailored for Your Success</h1>
             </div>
             <div className="flex-1 flex justify-center items-center md:px-10">
@@ -180,8 +180,8 @@ function Careers() {
                         {/* <button className="text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition">{career.location}</button> */}
                         </div>
 
-                        {/* Bottom Section with icons */}
-                        <div className="flex gap-4 mt-4 pt-4 border-t border-gray-200">
+                        {/* Bottom Section with icons for future */}
+                        {/* <div className="flex gap-4 mt-4 pt-4 border-t border-gray-200">
                         <div className="flex items-center text-gray-700 text-sm">
                             <FaClock className="w-4 h-4 mr-1 text-blue-500" />
                             {career.type}
@@ -190,7 +190,7 @@ function Careers() {
                             <FaDollarSign className="w-4 h-4 mr-1 text-blue-500" />
                             {career.salary}
                         </div>
-                        </div>
+                        </div> */}
                     </div>
                     ))}
                 </div>
@@ -223,46 +223,7 @@ function Careers() {
         </div>
         <hr className='my-24'/>
         {/* Team */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5'>
-
-                    {/* person 1 */}
-                    <div className='min-h-[350px] py-10 flex flex-col gap-2 justify-center items-center '>
-      <img
-        src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg"
-        className='h-24 w-24 rounded-full object-cover'
-        alt="Team member"
-      />
-      <h2 className='text-xl font-bold'>Jennifer Linda</h2>
-      <h5 className='text-blue-700'>Product Designer</h5>
-</div>
-<div className='min-h-[350px] py-10 flex flex-col gap-2 justify-center items-center '>
-      <img
-        src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg"
-        className='h-24 w-24 rounded-full object-cover'
-        alt="Team member"
-      />
-      <h2 className='text-xl font-bold'>Jennifer Linda</h2>
-      <h5 className='text-blue-700'>Product Designer</h5>
-</div>
-<div className='min-h-[350px] py-10 flex flex-col gap-2 justify-center items-center '>
-      <img
-        src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg"
-        className='h-24 w-24 rounded-full object-cover'
-        alt="Team member"
-      />
-      <h2 className='text-xl font-bold'>Jennifer Linda</h2>
-      <h5 className='text-blue-700'>Product Designer</h5>
-</div>
-<div className='min-h-[350px] py-10 flex flex-col gap-2 justify-center items-center '>
-      <img
-        src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg"
-        className='h-24 w-24 rounded-full object-cover'
-        alt="Team member"
-      />
-      <h2 className='text-xl font-bold'>Jennifer Linda</h2>
-      <h5 className='text-blue-700'>Product Designer</h5>
-</div>
-        </div>
+      <Team/>
 
       </div>
     </div>

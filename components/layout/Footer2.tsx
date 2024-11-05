@@ -36,7 +36,7 @@ const Footer2 = () => {
                 Get Started
               </button>
             </div>
-            <div className="flex gap-[30px] items-center box-border mt-12 ">
+            {/* <div className="flex gap-[30px] items-center box-border mt-12 ">
               <div>
                 <img
                   src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/youtube.svg"
@@ -65,7 +65,7 @@ const Footer2 = () => {
                   alt=""
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="h-auto lg:h-[300px]  w-px bg-[#ffffff33] mx-4 z-20 "></div>
           <div className="right max-lg:mt-16">

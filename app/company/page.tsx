@@ -10,31 +10,47 @@ import StandOutSection from '@/components/StandOutSection';
 function Comapny() {
   const services = [
     {
-      title: 'Development',
-      description: 'Our development is pixel perfect in all ways.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
+      title: 'Cloud Consulting',
+      description: 'We optimize your cloud strategy for seamless scalability.',
+      logo: 'https://example.com/cloud-consulting-logo.svg', // Replace with relevant logo URL
     },
     {
-      title: 'WooCommerce',
-      description: 'We have the best team for your shopping websites.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg',
+      title: 'Cybersecurity Services',
+      description: 'We safeguard your data with robust security measures.',
+      logo: 'https://example.com/cybersecurity-logo.svg', // Replace with relevant logo URL
     },
     {
-      title: 'CRM Solutions',
-      description: 'We enhance customer experiences for success.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg',
+      title: 'Data Engineering',
+      description: 'We transform raw data into actionable insights.',
+      logo: 'https://example.com/data-engineering-logo.svg', // Replace with relevant logo URL
     },
     {
-      title: 'Web Design',
-      description: 'We create vibrant, intuitive, and minimalist websites.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg',
+      title: 'AI Solutions',
+      description: 'We integrate intelligent systems to enhance efficiency.',
+      logo: 'https://example.com/ai-solutions-logo.svg', // Replace with relevant logo URL
     },
     {
-      title: 'IT Support',
-      description: 'We offer expert assistance for your IT issues.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg',
+      title: 'Blockchain Development',
+      description: 'We create secure and transparent blockchain applications.',
+      logo: 'https://example.com/blockchain-development-logo.svg', // Replace with relevant logo URL
+    },
+    {
+      title: 'Mobile App Development',
+      description: 'We design user-friendly mobile apps that engage users.',
+      logo: 'https://example.com/mobile-app-development-logo.svg', // Replace with relevant logo URL
+    },
+    {
+      title: 'DevOps Integration',
+      description: 'We streamline processes for faster, reliable software delivery.',
+      logo: 'https://example.com/devops-integration-logo.svg', // Replace with relevant logo URL
+    },
+    {
+      title: 'IT Infrastructure Management',
+      description: 'We ensure optimal performance and security of your IT systems.',
+      logo: 'https://example.com/it-infrastructure-management-logo.svg', // Replace with relevant logo URL
     },
   ];
+  
 
 
 
@@ -96,7 +112,7 @@ function Comapny() {
         <div className="max-w-7xl mx-auto p-6 md:p-12 font-montserrat ">
           <div className="flex flex-col md:flex-row gap-6 mb-8">
             <div className="flex-1 p-4">
-              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
+              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne captialize">WHAT WE'RE OFFERING</p>
               <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
             </div>
 
@@ -126,7 +142,7 @@ function Comapny() {
 
           <div className="flex flex-col md:flex-row gap-6 mb-8">
             <div className="flex-1 p-4">
-              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne">What We're Offering</p>
+              <p className="text-blue-600 text-[9px]  leading-3 mb-5 tracking-[3px] font-semibold font-syne captialize">WHAT WE'RE OFFERING</p>
               <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
             </div>
 

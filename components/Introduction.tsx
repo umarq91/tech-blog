@@ -68,12 +68,7 @@ function Introduction() {
               className='relative'
             />
             <div className='absolute left-0 sm:left-8 sm:bottom-4 max-w-[90%] lg:-left-3 xl:left-10 bottom-16 lg:bottom-10 md:bottom-0 bg-gray-100 p-3 sm:p-5 z-10 flex sm:h-[25%] md:gap-4 items-center'>
-              <img
-                src="/logo.png"
-                style={{ filter: 'invert(1)' }}
-                className="h-6 sm:h-8 w-6 sm:w-8 mt-1"
-                alt="Logo"
-              />
+        
               <div className='flex items-center gap-3 '>
                 <h1 className='text-xl sm:text-3xl md:text-4xl text-black'>+8</h1>
                 <div>

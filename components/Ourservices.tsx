@@ -44,7 +44,7 @@ function OurServices() {
     <div className="max-w-6xl mx-auto p-6 font-montserrat" ref={ref}>
       <div className="flex flex-col md:flex-row gap-6 mb-8">
         <div className="flex-1 p-4">
-          <p className="text-blue-600 leading-7 tracking-widest font-semibold">What We're Offering</p>
+          <p className="text-blue-600 leading-7 tracking-widest font-semibold captialize">WHAT WE'RE OFFERING</p>
           <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
         </div>
 
