@@ -24,7 +24,7 @@ function Header() {
               style={{ filter: 'invert(1)' }}
             />
           </Link>
-          <nav className="hidden lg:flex space-x-8 text-sm ">
+          <nav className="hidden lg:flex space-x-8 text-md">
           <Link href="/" className="hover:text-blue-600 transition">Home</Link>
           <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
           <Link href="/about" className="hover:text-blue-600 transition">About Us</Link>
@@ -80,7 +80,7 @@ function Header() {
 
       {/* Mobile Menu Links */}
       {isMobileMenuOpen && (
-        <nav className="lg:hidden flex flex-col space-y-4 mt-4 p-4 bg-gray-100 rounded-lg">
+        <nav className="lg:hidden  flex flex-col space-y-4 mt-4 p-4 bg-gray-100 rounded-lg">
           <Link href="/" className="hover:text-blue-600 transition">Home</Link>
           <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
           <Link href="/about" className="hover:text-blue-600 transition">About Us</Link>
