@@ -4,11 +4,11 @@ import TeamCard from './TeamCard'
 
 function Team() {
 const team = [
-  {src:"/team/person1.jpeg",position:"Chief Technical Officer and Co-Founder",name:"John Doe"},
-  {src:"/team/person2.jpeg",position:"Chief Strategist & Co-Founder",name:"John Doe"},
-  {src:"/team/person3.jpeg",position:"Director Growth and Business Development",name:"John Doe"},
-  {src:"/team/person4.png",position:"Director Business Operations",name:"John Doe"},
-  {src:"/team/person5.png",position:"Head of Technology Innovation",name:"John Doe"},
+  {src:"/team/person1.jpeg",position:"Chief Technical Officer and Co-Founder",name:"Farjad Habib"},
+  {src:"/team/person2.jpeg",position:"Chief Strategist & Co-Founder",name:"Sarmad Habib"},
+  {src:"/team/person3.jpeg",position:"Director Growth and Business Development",name:"Anum Asif"},
+  {src:"/team/person4.png",position:"Director Business Operations",name:"Javeria Zafar"},
+  {src:"/team/person5.png",position:"Head of Technology Innovation",name:"Ahsan Tariq"},
 
 ]
 

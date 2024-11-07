@@ -97,7 +97,9 @@ function AboutPage() {
   </p>
 
   <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-    Together, let’s navigate this exciting digital landscape and create a future where your potential is limitless. Join us on this journey, and let’s build something extraordinary together.
+    Together, let’s navigate this exciting digital landscape and create a future where your potential is limitless. 
+    <br/>
+    <span className='bg-yellow-500 mt-3 font-bold text-white'>  Join us on this journey, and let’s build something extraordinary together. </span>
   </p>
 </motion.div>
 

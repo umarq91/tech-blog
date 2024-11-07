@@ -148,10 +148,10 @@ function Contact() {
               Location
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Visit us at one of our key locations
+            Global Presence, Local Expertise
             </h1>
-            <p className="text-sm text-gray-400">
-              Our locations are strategically situated across the globe to serve businesses and visitors alike.
+            <p className="text-xs text-gray-400">
+          Explore our key locations worldwide, strategically positioned to deliver cutting-edge cloud solutions and IT services to businesses across the globe. No matter where you are, H-Dot is here to support your growth with local insights and global reach.
             </p>
           </div>
         </div>
@@ -166,7 +166,6 @@ function Contact() {
               </div>
               <div className="flex gap-3 flex-col flex-1">
                 <h2 className="text-lg">Vancouver, BC, Canada</h2>
-                <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
 
@@ -177,7 +176,6 @@ function Contact() {
               </div>
               <div className="flex gap-3 flex-col flex-1">
                 <h2 className="text-lg">Islamabad, 44000, Pakistan</h2>
-                <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
 
@@ -188,7 +186,6 @@ function Contact() {
               </div>
               <div className="flex gap-3 flex-col flex-1">
                 <h2 className="text-lg">California, USA</h2>
-                <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
 
@@ -199,7 +196,6 @@ function Contact() {
               </div>
               <div className="flex gap-3 flex-col flex-1">
                 <h2 className="text-lg">New York, NY, USA</h2>
-                <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>

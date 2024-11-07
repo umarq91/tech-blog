@@ -139,7 +139,7 @@ function Footer() {
                     {/* <li>Dribbble</li>
                     <li>Twitter</li>
                     <li>Instagram</li> */}
-                    {/* <Link href="https://www.linkedin.com/company/104643157"> <li>LinkedIn</li>   </Link> */}
+                    <Link href="https://www.linkedin.com/company/h-dot/"> <li>LinkedIn</li>   </Link>
                     
                 </ul>
               </div>
