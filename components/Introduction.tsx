@@ -37,12 +37,12 @@ function Introduction() {
             {/* buttons */}
             <div className='flex gap-4 mt-8'>
               <Link href={"/about"}>
-              <button className='bg-[#1351d8] rounded-full text-white px-6 py-2'>
+              <button className='bg-[#1351d8] rounded-full hover:opacity-90 text-white px-8 text-xs py-2'>
                 Learn More
               </button>
               </Link >
               <Link href={"/contact-us"}>
-              <button className='bg-gray-300 rounded-full text-blue-800 px-8 text-xs py-2'>
+              <button className='bg-gray-300 rounded-full hover:opacity-90 text-blue-800 px-8 text-xs py-2'>
                 Let's Talk
               </button>
               </Link>
@@ -67,10 +67,10 @@ function Introduction() {
               style={{ objectFit: 'contain' }}
               className='relative'
             />
-            <div className='absolute left-0 sm:left-8 sm:bottom-4 max-w-[90%] lg:-left-3 xl:left-10 bottom-16 lg:bottom-10 md:bottom-0 bg-gray-100 p-3 sm:p-5 z-10 flex sm:h-[25%] md:gap-4 items-center'>
+            <div className='absolute left-0 w-[40%]   lg:w-[50%] sm:bottom-4 lg:left-3  xl:left-10 bottom-16 lg:bottom-0 lg:h-24 md:bottom-0 sm:left-10 bg-gray-100 p-3 sm:p-5 z-10 flex  sm:h-28 md:left-28 md:w-[30%] md:gap-4 items-center'>
         
               <div className='flex items-center gap-3 '>
-                <h1 className='text-xl sm:text-3xl md:text-4xl text-black'>+8</h1>
+                <h1 className='text-xl sm:text-3xl md:text-4xl text-black'>+15</h1>
                 <div>
                   <p className='text-xs sm:text-base text-blue-500'>Years</p>
                   <p className='text-xs sm:text-sm text-gray-500'>Experience</p>

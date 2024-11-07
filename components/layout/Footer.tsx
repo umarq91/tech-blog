@@ -30,9 +30,9 @@ function Footer() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="py-28 px-8 w-full bg-[#f3f6fd] col-span-1  flex flex-col gap-10 rounded-lg">
               <div className="flex flex-col justify-center gap-4">
-                <div className="flex mb-3">
+                <div className="flex gap-2 mb-3">
                   <h3 className="mb-[6px] leading-[1px] text-[36px] font-medium font-dmSans text-normal text-inherit ">
-                   15+
+                   15+ {" "}
                   </h3>
                   <p className="text-[18px] leading-[1px] font-dmSans text-inherit">
                     Years
@@ -79,12 +79,12 @@ function Footer() {
               </div>
               <hr className="border border-gray-300" />
               <div className="flex flex-col justify-center gap-4">
-                <div className="flex mb-3">
+                <div className="flex gap-2 mb-3">
                   <h3 className="mb-[6px] leading-[1px] text-[36px] font-medium font-dmSans text-normal text-inherit ">
                     2
                   </h3>
                   <p className="text-[18px] leading-[1px] font-dmSans text-inherit">
-                    Minutes
+                 {}   Minutes
                   </p>
                 </div>
                 <h4 className="text-[14px] text-[#1351d8]  leading-[1px] font-light">

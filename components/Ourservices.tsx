@@ -1,35 +1,9 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { services } from '@/constants';
 
 function OurServices() {
-  const services = [
-    {
-      title: 'Development',
-      description: 'Our development is pixel perfect in all ways.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg',
-    },
-    {
-      title: 'WooCommerce',
-      description: 'We have the best team for your shopping websites.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg',
-    },
-    {
-      title: 'CRM Solutions',
-      description: 'We enhance customer experiences for success.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg',
-    },
-    {
-      title: 'Web Design',
-      description: 'We create vibrant, intuitive, and minimalist websites.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg',
-    },
-    {
-      title: 'IT Support',
-      description: 'We offer expert assistance for your IT issues.',
-      logo: 'https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg',
-    },
-  ];
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 }, // Start hidden and slightly below
@@ -44,7 +18,7 @@ function OurServices() {
     <div className="max-w-6xl mx-auto p-6 font-montserrat" ref={ref}>
       <div className="flex flex-col md:flex-row gap-6 mb-8">
         <div className="flex-1 p-4">
-          <p className="text-blue-600 leading-7 tracking-widest font-semibold captialize">WHAT WE'RE OFFERING</p>
+        <p className="text-blue-600 text-[9px] leading-3 mb-5 tracking-[3px] font-semibold font-syne captialize">WHAT WE'RE OFFERING</p>
           <h1 className="text-4xl font-bold mb-4">Dealing in All Professional IT Services</h1>
         </div>
 
