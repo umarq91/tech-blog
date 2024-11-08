@@ -24,15 +24,16 @@ function AboutPage() {
             transition={{ duration: 0.8, ease: 'easeInOut' }}
             className="flex flex-col justify-center items-center gap-5 text-center"
           >
-            <button className="text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition">
-              About Us
-            </button>
-            <h1 className="text-3xl md:text-5xl lg:text-7xl max-w-[900px] font-yantramanav font-bold text-[#212529] leading-snug">
-              H-Dot: Crafting the Future of Technology
-            </h1>
-            <h5 className="text-gray-700 text-xs max-w-3xl leading-relaxed">
-              At H-Dot, we redefine tech solutions, merging innovation with expertise to empower your business journey. Our commitment extends beyond delivering solutions; we cultivate partnerships that foster growth and success, ensuring you’re equipped for the future.
-            </h5>
+          <button className='text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition'>
+          About us
+          </button>
+          <h1 className='text-3xl md:text-5xl  lg:text-6xl max-w-[900px] font-yantramanav font-bold text-[#212529] leading-snug'>
+          H-Dot: Crafting the Future of Tech
+          </h1>
+          <h5 className='text-gray-700 text-base md:text-lg  max-w-3xl leading-relaxed'>
+          Innovative solutions and partnerships designed to drive growth and prepare you for the future.
+          </h5>
+       
           </motion.div>
         </section>
 
@@ -99,7 +100,7 @@ function AboutPage() {
   <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
     Together, let’s navigate this exciting digital landscape and create a future where your potential is limitless. 
     <br/>
-    <span className='bg-yellow-500 mt-3 font-bold text-white'>  Join us on this journey, and let’s build something extraordinary together. </span>
+    <span className='italic mt-3 font-bold '>  Join us on this journey, and let’s build something extraordinary together. </span>
   </p>
 </motion.div>
 

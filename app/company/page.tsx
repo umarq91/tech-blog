@@ -44,7 +44,9 @@ function Comapny() {
             <h5 className="text-lg sm:text-xl font-medium">
               Client satisfaction
             </h5>
-            <p className="text-gray-500 max-w-xs"></p>
+            <p className="text-gray-500 max-w-xs">
+              rate which reflects our commitment to excellence
+            </p>
           </div>
 
           <div className="flex flex-col items-center justify-center text-center gap-2">
@@ -74,55 +76,63 @@ function Comapny() {
       </div>
       {/* section 2 */}
       <MarqueeLogo />
-    {/* Extra section  */}
+      {/* Extra section  */}
 
-    
-    <div className="bg-[#1C1C1C] font-yantramanav my-20 lg:py-20 min-h-screen flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 px-6 lg:px-16 py-16">
-  {/* Left - Image */}
-  <div className="flex-1 flex justify-center lg:justify-start">
-    <img
-      src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/about-service-3.png"
-      alt="Service"
-      className="w-full object-cover rounded-xl shadow-lg"
+    <StandOutSection 
+    title="Crafted for Impact"
+    paragraphsTrigger={ 
+      <>
+         <p className="text-base leading-relaxed">
+            Our approach isn’t about quick fixes. It’s about precision,
+            innovation, and delivering real results that make a lasting
+            difference. With H-Dot, you don’t just get a service—you get a
+            solution that grows with you, setting you up for long-term success.
+          </p>
+          <p className="text-base leading-relaxed">
+            We’re passionate about exceeding expectations, with a relentless
+            focus on bringing you value that endures beyond the project at hand.
+            When you work with us, you’re not just a client—you’re a partner,
+            and we’re dedicated to helping you thrive.
+          </p>
+      </>
+    }
+    iconSectionTrigger={
+      <>
+       <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="text-blue-500 text-2xl">✔</div>
+              <h5 className="text-md">
+                {" "}
+                <span className="font-bold">Bespoke Solutions </span>: Unique,
+                purpose-built services to match your exact needs.
+              </h5>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="text-blue-500 text-2xl">✔</div>
+              <h5 className="text-md">
+                {" "}
+                <span className="font-bold">Rapid Response: </span> Ready to
+                assist when you need us most, anytime, anywhere.
+              </h5>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="text-blue-500 text-2xl">✔</div>
+              <h5 className="text-md">
+                {" "}
+                <span className="font-bold">Lasting Results: </span> Solutions
+                designed to adapt and sustain your growth over time.
+              </h5>
+            </div>
+          </div>
+
+      </>
+    }
     />
-  </div>
 
-  {/* Right - Content */}
-  <div className="flex-1 text-white space-y-4 max-w-xl lg:max-w-lg">
-    {/* Heading */}
-    <h1 className="text-3xl lg:text-6xl font-bold leading-tight">
-      Crafted for Impact
-    </h1>
-
-    {/* Paragraphs */}
-    <p className="text-base leading-relaxed">
-      Our approach isn’t about quick fixes. It’s about precision, innovation, and delivering real results that make a lasting difference. With H-Dot, you don’t just get a service—you get a solution that grows with you, setting you up for long-term success.
-    </p>
-    <p className="text-base leading-relaxed">
-      We’re passionate about exceeding expectations, with a relentless focus on bringing you value that endures beyond the project at hand. When you work with us, you’re not just a client—you’re a partner, and we’re dedicated to helping you thrive.
-    </p>
-
-    {/* Icon Section */}
-    <div className="space-y-4">
-      <div className="flex items-center gap-3">
-        <div className="text-blue-500 text-2xl">✔</div>
-        <h5 className="text-md"> <span className="font-bold">Bespoke Solutions </span>: Unique, purpose-built services to match your exact needs.</h5>
-      </div>
-      <div className="flex items-center gap-3">
-        <div className="text-blue-500 text-2xl">✔</div>
-        <h5 className="text-md"> <span className="font-bold">Rapid Response: </span> Ready to assist when you need us most, anytime, anywhere.</h5>
-      </div>
-      <div className="flex items-center gap-3">
-        <div className="text-blue-500 text-2xl">✔</div>
-        <h5 className="text-md"> <span className="font-bold">Lasting Results: </span> Solutions designed to adapt and sustain your growth over time.</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
+  
 
       {/* section 3 */}
-      <div className="bg-[#1C1C1C] min-h-screen text-white flex justify-center items-center">
+      <div className="bg-[#1C1C1C] mt-3 min-h-screen text-white flex justify-center items-center">
         <div className="max-w-7xl mx-auto p-6 md:p-12 font-montserrat ">
           <div className="flex flex-col md:flex-row gap-6 mb-8">
             <div className="flex-1 p-4">
@@ -177,7 +187,6 @@ function Comapny() {
       </div>
       <hr className="my-20" />
       {/* section 5 */}
-      <StandOutSection />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import ContactForm from "../contact-form"
 function Footer() {
   return (
     <footer>
-      <div className="max-w-7xl mx-auto px-6 py-10 min-h-[200px] font-yantramanav">
+      <div className="max-w-7xl mt-28 mx-auto px-6 py-10 min-h-[200px] font-yantramanav">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Form Section */}
           <div className="bg-[#f3f6fd] p-5  rounded-lg  py-16 px-8">

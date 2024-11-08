@@ -162,14 +162,14 @@ function Portfolio() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Intro */}
         <div className="flex flex-col justify-center items-center min-h-screen gap-5 text-center">
-          <button className="text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition">
-            Portfolio
+        <button className='text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition'>
+          Portfolio
           </button>
-          <h1 className="text-3xl md:text-5xl max-w-[1000px] font-yantramanav font-bold text-[#212529] leading-snug">
-            Turning Challenges to Success through Proven Case Studies and Innovative Solutions
+          <h1 className='text-3xl md:text-5xl  lg:text-5xl max-w-[900px] font-yantramanav font-bold text-[#212529] leading-snug'>
+          H-Dot: Turning Challenges into Success
           </h1>
-          <h5 className="text-gray-700 text-xs max-w-3xl leading-relaxed">
-            At H-Dot, we don't just deliver technology solutions; we empower businesses to conquer challenges and seize opportunities. Our case studies illustrate our expertise in crafting tailored solutions that drive real results. Dive into our success stories and discover how we can elevate your business in the digital landscape.
+          <h5 className='text-gray-700 text-base md:text-lg  max-w-3xl leading-relaxed'>
+          Empowering businesses with tailored solutions, backed by proven case studies
           </h5>
         </div>
 

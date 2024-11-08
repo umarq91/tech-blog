@@ -157,7 +157,44 @@ function Careers() {
                 
                 </div>
                 </div>
-    <StandOutSection/>
+    <StandOutSection
+    title='Why Working With Us is Exceptional'
+    paragraphsTrigger={
+      <>
+          <p className="text-base leading-relaxed">
+          We don’t believe in a one-size-fits-all workplace. 
+          Our team culture is carefully crafted to recognize and nurture each individual's strengths,
+           ensuring that you find purpose and growth in your role.
+
+      </p>
+      <p className="text-base  leading-relaxed">
+      Our dedication goes beyond day-to-day tasks. We focus on building lasting connections and
+       fostering an environment where your ideas and ambitions are supported, allowing you to thrive and make a long-term impact.
+      </p>
+      </>
+    }
+    iconSectionTrigger={
+      <>
+        <div className="gap-3 flex  items-center">
+        <div className="flex items-center gap-3">
+          {/* Tick Icon */}
+          <div className="text-blue-500 text-2xl">✔</div>
+          <h5 className="text-md ">
+          Empowering Growth Opportunities
+          </h5>
+        </div>
+        <div className="flex items-center gap-3">
+          {/* Tick Icon */}
+          <div className="text-blue-500 text-2xl">✔</div>
+          <h5 className="text-md ">
+          Collaborative and Supportive Environment
+          </h5>
+        </div>
+      
+      </div>
+      </>
+    }
+    />
 
 <hr className='my-24'/>
 {/* next section */}

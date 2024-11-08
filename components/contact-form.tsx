@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, FormEvent } from 'react';
 import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
 
 function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
@@ -54,7 +55,7 @@ function ContactForm() {
         'ZB0s5MrgpcBV07keG'
       )
       .then(() => {
-        alert("Message sent successfully to H-DOT!");
+      toast.success("Message sent successfully!");
       })
       .catch(() => {
         alert("An error occurred, please try again.");

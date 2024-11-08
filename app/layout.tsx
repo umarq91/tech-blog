@@ -5,6 +5,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import Footer2 from "@/components/layout/Footer2";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -33,6 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ToastContainer/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
