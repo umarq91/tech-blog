@@ -63,7 +63,7 @@ function Header() {
                 Call us
               </button>
             </Link>
-            <span className="text-gray-600 text-sm">+91-938-3000</span>
+            <span className="text-gray-600 text-sm">+1 (949) 247-9542</span>
           </div>
 
           {/* Divider */}
@@ -96,7 +96,7 @@ function Header() {
           <div className="flex flex-col items-start mt-4">
             <Link href="/contact-us">
               <button className="text-blue-600 text-xs mb-1 hover:text-blue-700 transition">
-                Call us: +91-938-3000
+                Call us: +1 (949) 247-9542
               </button>
             </Link>
             <Link href="/contact-us">
