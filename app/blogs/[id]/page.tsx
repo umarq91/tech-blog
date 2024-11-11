@@ -23,7 +23,7 @@ type BlogPost = {
 
 const BlogById: React.FC = () => {
   const { id } = useParams();
-  const post: BlogPost = BlogsData.find((p) => p.id === Number(id));
+  const post = BlogsData.find((p) => p.id === Number(id));
 
   if (!post) return <p className="text-center text-red-500">No Post Found</p>;
 
