@@ -1,5 +1,4 @@
-"use client";
-
+'use client'
 import { useParams } from "next/navigation";
 import React from "react";
 import BlogsData from "@/blogs.json";
@@ -7,8 +6,8 @@ import { motion } from "framer-motion";
 import { FiCalendar, FiUser } from "react-icons/fi";
 
 type BlogContent = {
-  type: 'heading' | 'subheading' | 'paragraph';
-  text: string;
+  type: 'heading' | 'subheading' | 'paragraph' | 'lineBreak' | 'paragraphBreak';
+  text?: string; // Optional, since lineBreak and paragraphBreak won’t need text
 };
 
 type BlogPost = {
@@ -28,7 +27,7 @@ const BlogById: React.FC = () => {
   if (!post) return <p className="text-center text-red-500">No Post Found</p>;
 
   return (
-    <div className="max-w-3xl font-poppins mx-auto p-8 bg-white  rounded-lg mt-10 transition duration-500 transform  hover:shadow-3xl">
+    <div className="max-w-3xl font-poppins mx-auto p-8 bg-white rounded-lg mt-10 transition duration-500 transform hover:shadow-3xl">
       {/* Cover Image */}
       <motion.div
         className="w-full h-64 overflow-hidden rounded-lg shadow-lg"
@@ -71,49 +70,56 @@ const BlogById: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="mt-8 space-y-8 text-gray-800">
-        {post.content.map((item, index) => {
-          switch (item.type) {
-            case "heading":
-              return (
-                <motion.h2
-                  key={index}
-                  className="text-3xl font-semibold text-purple-700 mt-6 border-b-2 border-purple-300 pb-2"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  {item.text}
-                </motion.h2>
-              );
-            case "subheading":
-              return (
-                <motion.h3
-                  key={index}
-                  className="text-2xl font-medium text-gray-700 mt-4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  {item.text}
-                </motion.h3>
-              );
-            case "paragraph":
-            default:
-              return (
-                <motion.p
-                  key={index}
-                  className="text-lg leading-relaxed border-l-2 border-gray-200 pl-4 hover:border-purple-400 transition duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  {item.text}
-                </motion.p>
-              );
-          }
-        })}
-      </div>
+  {/* Content */}
+<div className="mt-8 text-gray-800">
+  {post.content.map((item, index) => {
+    switch (item.type) {
+      case "heading":
+        return (
+          <motion.h2
+            key={index}
+            className="text-3xl my-8 font-semibold text-purple-700 border-b-2 border-purple-300 pb-2"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            {item.text}
+          </motion.h2>
+        );
+      case "subheading":
+        return (
+          <motion.h3
+            key={index}
+            className="text-2xl font-medium text-gray-700 my-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            {item.text}
+          </motion.h3>
+        );
+      case "paragraph":
+        return (
+          <motion.p
+            key={index}
+            className="text-lg leading-relaxed my-4 border-l-2 border-gray-200 pl-4 hover:border-purple-400 transition duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            {item.text}
+          </motion.p>
+        );
+      case "lineBreak":
+        return <br key={index} />;
+      case "paragraphBreak":
+        return <div key={index} className="my-6" />;
+      default:
+        return null;
+    }
+  })}
+</div>
+
     </div>
   );
 };

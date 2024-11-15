@@ -158,10 +158,10 @@ function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-50 font-poppins">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className=" bg-gray-50 font-poppins">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:p-20">
         {/* Main Intro */}
-        <div className="flex flex-col justify-center items-center min-h-screen gap-5 text-center">
+        <div className="flex lg:p-20 flex-col justify-center items-center  gap-5 text-center">
         <button className='text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition'>
           Portfolio
           </button>

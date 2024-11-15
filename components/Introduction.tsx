@@ -12,7 +12,7 @@ function Introduction() {
   };
 
   return (
-    <div className='min-h-screen bg-[#e4e4e4] bg-opacity-30 py-10 px-4 sm:py-16 lg:p-24 font-yantramanav'>
+    <div className=' bg-[#e4e4e4] bg-opacity-30 py-10 px-4 sm:py-16 lg:p-24 font-yantramanav'>
       <div className='flex flex-col lg:flex-row'>
         {/* left */}
         <motion.div

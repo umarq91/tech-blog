@@ -13,8 +13,8 @@ function Contact() {
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900 py-12">
-      <div className="max-w-6xl mx-auto font-yantramanav mb-20">
-        <div className="flex flex-col justify-center items-center min-h-screen gap-5 text-center">
+      <div className="max-w-6xl mx-auto font-yantramanav mb-20 lg:p-20">
+        <div className="flex flex-col justify-center items-center  gap-5 text-center">
           <button className="text-blue-700 bg-blue-100 px-7 py-2 rounded-full text-sm hover:bg-blue-200 transition">
             Contact us
           </button>
@@ -140,7 +140,7 @@ function Contact() {
       </div>
 
       {/* Section 4: Locations */}
-      <div className="bg-[#1C1C1C] gap-10 min-h-screen flex flex-col md:flex-row text-white p-5 md:p-20">
+      <div className="bg-[#1C1C1C] gap-10  flex flex-col md:flex-row text-white p-5 md:p-20">
         {/* Left Section */}
         <div className="flex-1 max-w-lg mx-auto justify-center flex flex-col border-b-2 md:border-b-0 md:border-r-2 border-opacity-5 border-gray-600 mb-8 md:mb-0 md:pr-10">
           <div className="max-w-lg">
